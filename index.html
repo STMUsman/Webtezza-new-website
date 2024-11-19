@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black w-full h-full relative">
+    <div class="absolute">
+      <img
+        src="Assets/img/Ellipse 4.png"
+        alt=""
+        class="mt-16 sm:mt-0 md:w-3/4 md:h-auto lg:mt-0 lg:w-4/5 lg:h-4/5"
+      />
+    </div>
+    <div class="absolute mt-32 md:mt-48 lg:mt-48 xl:mt-64">
+      <img
+        src="Assets/img/Group 3596.png"
+        alt=""
+        class="w-40 h-auto lg:w-60 xl:w-60"
+      />
+    </div>
+
+    <div class="absolute pl-3 md:pl-24 lg:pl-44 xl:pl-72">
+      <img
+        src="Assets/img/Graphic (1).png"
+        alt=""
+        class="w-16 h-auto mt-80 pt-28 md:w-28 md:mt-72 md:pt-52 lg:w-32 lg:mt-44 lg:pt-96 xl:mt-64 xl:w-36"
+      />
+    </div>
+
+    <div
+      class="absolute mt-72 flex justify-end w-full pr-5 md:pr-12 md:mt-72 lg:pr-32"
+    >
+      <img
+        src="Assets/img/Graphic.png"
+        alt=""
+        class="w-3.5 h-auto md:w-6 lg:w-7 xl:w-8"
+      />
+    </div>
+
+    <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5">
+      <nav
+        id="navbar"
+        class="nav-class sm:border sm:rounded-full sm:px-6 sm:items-center sm:content-center lg:border lg:rounded-full lg:px-12 lg:items-center lg:content-center"
+      >
+        <div
+          class="container gap-0 flex items-center justify-between p-5 lg:p-0 bg-transparent xl:gap-40"
+        >
+          <div
+            id="nav-menu"
+            class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full sm:w-0 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+          >
+            <ul
+              class="flex flex-col items-center gap-6 lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6"
+            >
+              <li>
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#ourstory" class="nav-link">OurStory</a>
+              </li>
+              <li>
+                <a href="#service" class="nav-link">Service</a>
+              </li>
+              <li>
+                <a href="#contactus" class="nav-link">Contact Us</a>
+              </li>
+              <li>
+                <button>
+                  <a href="#signup" class="nav-link lg:hidden">Sign Up</a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="#login" class="nav-link lg:hidden">Login</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:pr-16">
+            <img
+              src="Assets/img/logo (2).png"
+              alt=""
+              class="w-40 h-auto md:w-56 md:h-auto lg:w-52 lg:h-auto xl:w-56"
+            />
+          </div>
+          <div
+            id="nav-menu"
+            class="absolute top-0 left-[-100%] min-h-[100vh] w-full flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:w-auto "
+          >
+            <ul class="flex flex-col items-center gap-5 lg:flex-row xl:gap-6">
+              <li>
+                <button
+                  class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent"
+                >
+                  <a href="#signup">Sign up</a>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent"
+                >
+                  <a href="#login">Login</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+            <i class="ri-menu-line" id="hamburger"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section>
+      <div class="pt-40 flex flex-col md:pt-32 lg:pt-24 xl:pt-16">
+        <div class="flex justify-center">
+          <img
+            src="Assets/img/Group 3595.png"
+            alt=""
+            class="w-64 h-auto md:w-5/12 lg:w-2/5"
+          />
+        </div>
+        <div class="justify-center flex">
+          <img
+            src="Assets/img/image 3.png"
+            alt=""
+            class="w-11/12 h-auto px-2 -mt-2 md:w-10/12 lg:pt-0 lg:w-10/12 xl:pt-0 xl:-mt-10"
+          />
+        </div>
+
+        <div class="pt-3 flex justify-center lg:pt-6">
+          <button
+            class="w-28 h-8 rounded-full border-2 font-medium text-xs md:text-sm  md:w-36 md:h-10 lg:w-52 lg:h-14 lg:text-lg xl:text-lg bg-transparent xl:w-52 xl:h-14"
+            style="border-color: rgba(30, 26, 178, 1)"
+          >
+            Get Started
+          </button>
+        </div>
+        <!-- <div class="-mt-52">
+          <div class="-mt-36 md:-mt-96 lg:-mt-52 flex justify-end">
+            <img
+              src="Assets/img/Group 1000001781.png"
+              alt=""
+              class="-mt-36 w-56 md:-mt-80 md:w-2/3 lg:w-2/3 lg:-mt-96 xl:w-3/4"
+            />
+          </div>
+
+          <div class="-mt-56 md:-mt-96  flex justify-end">
+            <img
+              src="Assets/img/Group 3594.png"
+              alt=""
+              class="flex w-16 h-auto md:w-36 md:-mt-96 md:h-64 lg:-mt-96 lg:w-56 lg:h-auto"
+            />
+          </div>
+        </div> -->
+        <div class="relative flex justify-end">
+          <div class="absolute flex justify-end lg:-mt-36">
+            <img
+              src="Assets/img/Group 1000001781.png"
+              alt=""
+              class="-mt-36 w-56 md:-mt-80 md:w-2/3 lg:w-2/3 lg:-mt-96 xl:w-3/4"
+            />
+          </div>
+
+          <div class="absolute">
+            <img
+              src="Assets/img/Group 3594.png"
+              alt=""
+              class="-mt-2 w-16 md:w-36 lg:w-52 xl:w-72 xl:-mt-8"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center mt-8 md:mt-16 lg:mt-20 xl:mt-32">
+          <img src="Assets/img/Group 3599.png" alt="" class="w-36 h-auto md:w-80 lg:w-5/12">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+    
+  </body>
+</html>
