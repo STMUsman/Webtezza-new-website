@@ -2,17 +2,23 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px"
+    extend: {
+      screens: {
+        '2k': '2048px',
+      },
     },
-    extend: {},
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2k': '2048px',
+    },
     fontFamily: {
         Jost: ["Jost", "sans-serif"],
         Lobster : ["Lobster", "sans-serif"],
-        Poppins : ["Poppins"]
+        Poppins : ["Poppins"],
+        Italic : ["ital"]
     },
     container: {
       center: true,
