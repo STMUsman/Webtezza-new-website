@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <link href="./output.css" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    animation: {
+                        'spin-slow': 'spinCircle 10s linear infinite',
+                        'image-spin': 'imageSpin 10s linear infinite',
+                    },
+                    keyframes: {
+                        spinCircle: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                        imageSpin: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(-360deg)' },
+                        },
+                    },
+                },
+            },
+            plugins: [],
+        };
+    </script>
+</head>
+
+<body class="bg-black w-full h-full relative">
+
+
+    <section>
+        <div class="absolute">
+            <img src="Assets/img/Ellipse 4.png" alt=""
+                class="w-72 mt-16 sm:mt-0 md:w-3/4 md:h-auto lg:mt-0 lg:w-4/5 lg:h-4/5 [@media(min-width:2048px)]:w-[100%] [@media(min-width:2048px)]:h-auto" />
+        </div>
+        <div class="absolute mt-32 md:mt-48 lg:mt-48 xl:mt-80">
+            <img src="Assets/img/Group 3596.png" alt=""
+                class="w-40 h-auto lg:w-60 xl:w-60 [@media(min-width:2048px)]:w-[550px]" />
+        </div>
+
+
+
+        <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10">
+            <nav id="navbar"
+                class="nav-class sm:border sm:rounded-full sm:px-6 sm:items-center sm:content-center lg:border lg:rounded-full lg:px-5 lg:items-center lg:content-center xl:px-10 [@media(min-width:2048px)]:w-[2000px] [@media(min-width:2048px)]:h-28">
+                <div
+                    class="container gap-0 flex items-center justify-between p-5 lg:p-0 bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
+                    <div id="nav-menu"
+                        class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full sm:w-0 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto ">
+                        <ul class="flex flex-col items-center gap-6 lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6 ">
+                            <li>
+                                <a href="#home"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold ">Home</a>
+                            </li>
+                            <li>
+                                <a href="#ourstory"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">OurStory</a>
+                            </li>
+                            <li>
+                                <a href="#service"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Service</a>
+                            </li>
+                            <li>
+                                <a href="#contactus"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#signup" class="nav-link lg:hidden">Sign Up</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#login" class="nav-link lg:hidden">Login</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:pr-16 xl:pr-[75px] ">
+                        <img src="Assets/img/logo (2).png" alt=""
+                            class="w-40 h-auto md:w-56 md:h-auto lg:w-52 lg:h-auto xl:w-56 [@media(min-width:2048px)]:w-[360px]" />
+                    </div>
+                    <div id="nav-menu"
+                        class="absolute top-0 left-[-100%] min-h-[100vh] w-full flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:w-auto ">
+                        <ul class="flex flex-col items-center gap-5 lg:flex-row xl:gap-6">
+                            <li>
+                                <button
+                                    class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
+                                    <a href="#signup "
+                                        class="[@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Sign
+                                        up</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
+                                    <a href="#login"
+                                        class="[@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Login</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden ">
+                        <i class="ri-menu-line" id="hamburger"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section>
+        <div class="pt-8 flex flex-col md:pt-32 lg:pt-24 xl:pt-16 [@media(min-width:2048px)]:pt-64">
+            <div class="relative flex justify-center z-[-1]">
+                <img src="Assets/img/logo (6).png" alt=""
+                    class="absolute w-60 h-auto md:w-[550px] lg:w-[750px] xl:w-[1200px]">
+
+
+                <div class="box w-[80%] h-[600px] bg-[#161616] absolute  rounded-3xl px-4 pt-10 ">
+                    <h1 class="font-Poppins font-bold text-lg z-[-10]">Let’s discuss<br>
+                        on something <span class="text-[#1E1AB2] font-bold text-xl">cool</span> together</h1>
+                    <ul class="flex flex-col mt-5 gap-5">
+                        <li class="text-[10px] font-medium">First Name</li>
+                        <li><img src="Assets/img/Vector 7.png" alt=""></li>
+                        <li class="text-[10px] font-medium">Last Name</li>
+                        <li><img src="Assets/img/Vector 7.png" alt=""></li>
+                        <li class="text-[10px] font-medium">Email</li>
+                        <li><img src="Assets/img/Vector 7.png" alt=""></li>
+                        <li class="text-[10px] font-medium">Phone Number</li>
+                        <li><img src="Assets/img/Vector 7.png" alt=""></li>
+                        <li class="text-[10px] font-medium">Message</li>
+                        <li><img src="Assets/img/Vector 7.png" alt=""></li>
+                    </ul>
+                    <ul class="mt-7 gap-1 flex flex-col">
+                        <li>
+                            <ul class="flex flex-row gap-3 items-center">
+                                <li><img src="Assets/img/Vector (111).png" alt="" class="w-3 h-auto"></li>
+                                <li class="font-medium text-[9px]">SaulDesign@gmail.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="flex flex-row gap-3 items-center">
+                                <li><img src="Assets/img/Vector (211).png" alt="" class="w-2.5 h-auto"></li>
+                                <li class="font-medium text-[9px]">+123 456 789</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="flex flex-row gap-3 items-center">
+                                <li><img src="Assets/img/Vector (311).png" alt="" class="w-2.5 h-auto"></li>
+                                <li class="font-medium text-[9px]">123 Street 456 House</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="mt-4 flex justify-end">
+                        <button class="w-32 h-8 bg-[#1E1AB2] rounded-full text-[11px] font-medium">Send Message</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <section class="">
+        <div class="mt-4 md:mt-9 lg:mt-11 xl:mt-16 [@media(min-width:2048px)]:mt-32 ">
+            <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[85%] h-auto z-0">
+            </div>
+        </div>
+        <div
+            class="py-3.5 px-8 md:py-6 md:px-10 lg:py-8 lg:px-12 xl:py-10 xl:px-14 xl:mt-6  [@media(min-width:2048px)]:mt-12">
+            <div class="flex justify-center xl:mr-20">
+                <ul class="flex  gap-2 md:gap-10 lg:gap-16 xl:gap-36 [@media(min-width:2048px)]:gap-60">
+                    <li class=" mt-1 w-1/4 md:w-auto z-10">
+                        <ul>
+                            <li><img src="Assets/img/Layer_1.png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-28 xl:w-40 [@media(min-width:2048px)]:w-72"></li>
+                        </ul>
+                    </li>
+                    <li class="w-1/4 md:w-auto z-10">
+                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                            <li
+                                class="font-medium text-[10px] md:text-sm font-Poppins lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                Learn More</li>
+                            <li
+                                class="font-bold text-[7px] mt-1.5 md:mt-3 lg:mt-4 md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                LINK 1</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                2
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                3
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                4
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                5
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                6
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                7
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-1/4  md:w-auto z-10">
+                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                            <li
+                                class="font-medium text-[10px] font-Poppins  md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                Tickets & Booking</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs mt-1.5 lg:mt-4 md:mt-3 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                LINK 1</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                2
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                3
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-1/4 md:w-auto z-10">
+                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                            <li
+                                class="font-bold text-[10px]  font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                Contact Us</li>
+                            <li
+                                class="font-bold text-[7px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                LINK 1</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                2
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                3
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex justify-end -mt-3 xl:px-16 xl:-mt-0 xl:mr-16 md:mr-8 lg:mr-10">
+                <ul class="flex flex-col">
+                    <li class="flex justify-center z-10">
+                        <h1 class="font-medium text-[10px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">
+                            Social</h1>
+                    </li>
+                    <li class="mt-2 md:mt-3 xl:mt-6 z-10">
+                        <ul class="flex gap-3 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
+                            <li><img src="Assets/img/bxl-facebook.png" alt=""
+                                    class="w-1.5 md:w-2.5 lg:w-4 md: h-auto [@media(min-width:2048px)]:w-7"></li>
+                            <li><img src="Assets/img/instagram-logo.png" alt=""
+                                    class="w-2.5 md:w-3.5 lg:w-6 h-auto [@media(min-width:2048px)]:w-11"></li>
+                            <li><img src="Assets/img/youtube-logo.png" alt=""
+                                    class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                            <li><img src="Assets/img/Object.png" alt=""
+                                    class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

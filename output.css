@@ -857,3 +857,47 @@ body {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
+
+.box{
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.login-box{
+  background: rgba(255, 255, 255, 0.24);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.drop-btn{
+  transform: rotate(-180deg);
+}
+
+
+.container{
+  background-image: linear-gradient(rgba(3, 3, 3, 1), rgba(3, 3, 3, 0.7)), url('Assets/img/186fa13000b448b61f30126142d1bc02.png');
+}
+
+
+
+.inputs{
+  max-height: 65px;
+  transition: max-height 0s;
+  overflow: hidden;
+
+}
+.gbutton{
+  max-height: 65px;
+  transition: max-height 0s;
+  overflow: hidden;
+
+}
+.googlebtn{
+  display: hidden;
+}
