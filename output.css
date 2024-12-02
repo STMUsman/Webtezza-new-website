@@ -827,8 +827,6 @@ video {
   .nav-class {
     max-width: 2000px;
     height: 65px;
-    
-
     background: rgba(255, 255, 255, 0.09);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
@@ -880,7 +878,7 @@ border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 
-.container{
+.container-box{
   background-image: linear-gradient(rgba(3, 3, 3, 1), rgba(3, 3, 3, 0.7)), url('Assets/img/186fa13000b448b61f30126142d1bc02.png');
 }
 
