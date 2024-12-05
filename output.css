@@ -879,23 +879,27 @@ border: 1px solid rgba(255, 255, 255, 0.35);
 
 
 .container-box{
-  background-image: linear-gradient(rgba(3, 3, 3, 1), rgba(3, 3, 3, 0.7)), url('Assets/img/186fa13000b448b61f30126142d1bc02.png');
+  background-image: linear-gradient(rgba(3, 3, 3, 1), rgba(3, 3, 3, 0.3)), url('Assets/img/186fa13000b448b61f30126142d1bc02.png');
+}
+
+.team-bg{
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.service{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 
 
-.inputs{
-  max-height: 65px;
-  transition: max-height 0s;
-  overflow: hidden;
 
-}
-.gbutton{
-  max-height: 65px;
-  transition: max-height 0s;
-  overflow: hidden;
 
-}
-.googlebtn{
-  display: hidden;
-}

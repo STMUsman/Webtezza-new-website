@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <link href="./output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-black w-full h-full relative">
+
+    <section>
+        <div class="absolute z-[-1]">
+            <img src="Assets/img/Ellipse 4.png" alt=""
+                class="w-72 mt-16 sm:mt-0 md:w-3/4 md:h-auto lg:mt-0 lg:w-4/5 lg:h-4/5 [@media(min-width:2048px)]:w-[100%] [@media(min-width:2048px)]:h-auto" />
+        </div>
+        <div class="absolute mt-32 md:mt-48 lg:mt-48 xl:mt-80">
+            <img src="Assets/img/Group 3596.png" alt=""
+                class="w-40 h-auto lg:w-60 xl:w-60 [@media(min-width:2048px)]:w-[550px]" />
+        </div>
+
+        <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10">
+            <nav id="navbar"
+                class="nav-class sm:border sm:rounded-full sm:px-6 sm:items-center sm:content-center lg:border lg:rounded-full lg:px-5 lg:items-center lg:content-center xl:px-10 [@media(min-width:2048px)]:w-[2000px] [@media(min-width:2048px)]:h-28  ">
+                <div
+                    class="container gap-0 flex items-center justify-between p-5 lg:p-0 bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
+                    <div id="nav-menu"
+                        class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full sm:w-0 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto ">
+                        <ul class="flex flex-col items-center gap-6 lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6 ">
+                            <li>
+                                <a href="index.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold ">Home</a>
+                            </li>
+                            <li>
+                                <a href="ourstory.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">OurStory</a>
+                            </li>
+                            <li>
+                                <a href="service.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Service</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="signup.html" class="nav-link lg:hidden">Sign Up</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="login.html" class="nav-link lg:hidden">Login</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:pr-16 xl:pr-[75px] ">
+                        <img src="Assets/img/logo (2).png" alt=""
+                            class="w-40 h-auto md:w-56 md:h-auto lg:w-52 lg:h-auto xl:w-56 [@media(min-width:2048px)]:w-[360px]" />
+                    </div>
+                    <div id="nav-menu"
+                        class="absolute top-0 left-[-100%] min-h-[100vh] w-full flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:w-auto ">
+                        <ul class="flex flex-col items-center gap-5 lg:flex-row xl:gap-6">
+
+                            <li>
+                                <button
+                                    class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
+                                    <a href="login.html"
+                                        class="[@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Login</a>
+                                </button>
+                            </li>
+                            <li class="flex justify-center items-center">
+                                <button class="nav-link">
+                                    <a href="#profile" class=""><img src="Assets/img/icons8-male-user-48.png" alt=""
+                                            class="lg:w-10 h-auto xl:w-12 [@media(min-width:2048px)]:w-20"> </a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden ">
+                        <i class="ri-menu-line" id="hamburger"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section>
+        <div
+            class="w-full mt-24 md:mt-16 md:mb-10 [@media(min-width:2048px)]:mt-72 [@media(min-width:2048px)]:mb-0 xl:mt-28 ">
+            <div class="w-full relative flex flex-col justify-center z-[-1]">
+                <img src="Assets/img/logo (6).png" alt=""
+                    class="absolute w-60 h-auto md:mt-16 mt-28 md:w-[500px] lg:w-[650px] xl:w-[1000px] [@media(min-width:2048px)]:w-[1500px] [@media(min-width:2048px)]:mt-24">
+
+                <div class="w-full h-auto bg-transparent z-50 flex justify-center p-2">
+                    <h2
+                        class="text-[9px] md:text-[13px] xl:text-xl [@media(min-width:2048px)]:text-4xl [@media(min-width:2048px)]:rounded-full [@media(min-width:2048px)]:px-16 [@media(min-width:2048px)]:py-4 font-medium px-4 py-1 xl:px-5 border-2 w-fit border-[#1E1AB2] rounded-3xl flex justify-center items-center">
+                        Service</h2>
+                </div>
+                <div class="flex justify-center -mt-1">
+                    <img src="Assets/img/Group 1000001784.png" alt="" class="w-[40%] h-auto">
+                </div>
+                <div class="w-full h-auto bg-transparent z-50 flex justify-evenly mt-1">
+
+                    <h2
+                        class="text-[9px] md:text-[13px] xl:text-xl [@media(min-width:2048px)]:text-4xl [@media(min-width:2048px)]:rounded-full [@media(min-width:2048px)]:w-[340px] [@media(min-width:2048px)]:py-4 font-medium px-2 py-1 border-2 border-[#1E1AB2] w-[90px] md:w-32 xl:w-48 h-auto rounded-3xl flex justify-center items-center">
+                        Development</h2>
+                    <h2
+                        class="text-[9px] md:text-[13px] xl:text-xl [@media(min-width:2048px)]:text-4xl [@media(min-width:2048px)]:rounded-full [@media(min-width:2048px)]:w-[340px] [@media(min-width:2048px)]:py-4 font-medium px-2 py-1 border-2 border-[#1E1AB2] w-[90px] h-auto md:w-32 xl:w-48  rounded-3xl flex justify-center items-center">
+                        Marketing</h2>
+                </div>
+                <div class="w-full h-auto mt-2 md:mt-4 xl:mt-8 [@media(min-width:2048px)]:mt-12">
+                    <ul class="flex justify-evenly ">
+                        <li>
+                            <ul class="flex flex-col gap-1.5 md:gap-3 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            App Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="flex flex-col gap-1.5 md:gap-3 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 h-auto xl:w-5 [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul
+                                        class="flex justify-center items-center  gap-1 md:gap-2 [@media(min-width:2048px)]:gap-6">
+                                        <li class="flex justify-center items-center"><button><img
+                                                    src="Assets/img/Group 3620.png" alt=""
+                                                    class="w-3 md:w-4 xl:w-5 h-auto [@media(min-width:2048px)]:w-10"></button>
+                                        </li>
+                                        <li
+                                            class="text-[7px] md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                            Web Development</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-full relative  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+            <div class="w-full relative flex justify-center mt-4  z-50">
+                <img src="Assets/img/des.png" alt="" class="absolute -mt-20 xl:-mt-40">
+
+
+                <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                    <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                        <li class="w-full">
+                            <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li
+                                    class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                    App development </li>
+                                <li
+                                    class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                    Machine learning suggestions</li>
+                            </ul>
+                        </li>
+                        <li class="w-full">
+                            <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li
+                                    class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                    Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                    full-stack development and cloud infrastructure.</li>
+                                <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                        alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                            </ul>
+                        </li>
+                        <li class="w-full">
+                            <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                    <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex "></li>
+                                <li
+                                    class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                    <ul class="flex flex-col gap-2">
+                                        <li class="flex justify-center items-center"><img
+                                                src="Assets/img/Group 16 (1).png" alt=""></li>
+                                        <li
+                                            class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                            Project Count
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                    <ul class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                        <li
+                                            class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                            Insert
+                                            some
+                                            key statistic </li>
+                                        <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                                alt="" class="w-20 xl:w-32 h-auto"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w-full">
+                            <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li
+                                    class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                    <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                        class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto"></li>
+                                <li class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                    <img src="Assets/img/Frame 21.png" alt="" class="w-full "></li>
+                                <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                    <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                        class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w-full">
+                            <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0"><img
+                                        src="Assets/img/Group 132.png" alt="">
+                                </li>
+                                <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                    <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                        class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl"></li>
+                            </ul>
+                        </li>
+                        <li class="w-full">
+                            <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                <li
+                                    class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                    <img src="Assets/img/Frame 210.png" alt="" class=""></li>
+                                <li class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                    <ul class="w-[70%] flex flex-row justify-center">
+                                        <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                        <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                        <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="flex relative justify-center mt-5 [@media(min-width:2048px)]:mt-32">
+           
+
+                <div class="w-[90%] xl:w-[80%] h-auto ">
+                    <ul class="flex flex-row gap-2 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                        <li
+                            class="w-[30%] service rounded-xl xl:rounded-3xl font-medium text-[8px] xl:text-base md:text-xs md:px-4 px-2 py-4 xl:px-10 justify-center items-center [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:py-10">
+                            Easy drag & drop your ideas to make our work best
+                        </li>
+                        <li class="w-[40%] service rounded-xl xl:rounded-3xl  py-4 flex justify-center items-center">
+                            <ul class="flex gap-1.5 flex-col md:gap-2.5">
+                                <li class="flex justify-center items-center"><img src="Assets/img/photos.png" alt=""
+                                        class="w-[80%]"></li>
+                                <li
+                                    class="font-medium text-xs flex justify-center items-center md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                    See Client says</li>
+                            </ul>
+                        </li>
+                        <li class="w-[30%] flex justify-between">
+                            <ul class="flex flex-col w-full gap-2 xl:gap-4 [@media(min-width:2048px)]:gap-8">
+                                <li class="service flex items-center rounded-xl xl:rounded-3xl w-full h-full">
+                                    <ul class="p-1.5 flex flex-col items-center gap-2 lg:p-4 xl:gap-4 [@media(min-width:2048px)]:gap-6 [@media(min-width:2048px)]:p-10">
+                                        <li class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">Logo Desing
+                                        </li>
+                                        <li class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">Web
+                                            Development</li>
+                                        <li class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">Digital
+                                            Marketing</li>
+                                    </ul>
+                                </li>
+                                <li class="flex items-end z-[50]"><button
+                                        class="font-semibold text-[10px] md:text-xs w-full bg-[#1570EF] rounded-xl xl:rounded-3xl [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:py-10  py-1.5 md:py-2.5 lg:py-4 xl:text-base xl:py-5"><a
+                                            href="#book">Book a Call</a></button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="mt-9 md:mt-20 lg:mt-20 xl:mt-28 [@media(min-width:2048px)]:mt-44 [@media(min-width:2048px)]:mb-60">
+        <div class="mt-4 md:mt-9 lg:mt-11 xl:mt-16 [@media(min-width:2048px)]:mt-32 ">
+            <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[85%] h-auto z-0">
+            </div>
+        </div>
+        <div
+            class="py-3.5 px-8 md:py-6 md:px-10 lg:py-8 lg:px-12 xl:py-10 xl:px-14 xl:mt-6  [@media(min-width:2048px)]:mt-12">
+            <div class="flex justify-center xl:mr-20">
+                <ul class="flex  gap-2 md:gap-10 lg:gap-16 xl:gap-36 [@media(min-width:2048px)]:gap-60">
+                    <li class=" mt-1 w-1/4 md:w-auto z-10">
+                        <ul>
+                            <li><img src="Assets/img/Layer_1.png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-28 xl:w-40 [@media(min-width:2048px)]:w-72"></li>
+                        </ul>
+                    </li>
+                    <li class="w-1/4 md:w-auto z-10">
+                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                            <li
+                                class="font-medium text-[10px] md:text-sm font-Poppins lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                Learn More</li>
+                            <li
+                                class="font-bold text-[7px] mt-1.5 md:mt-3 lg:mt-4 md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                LINK 1</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                2
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                3
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                4
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                5
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                6
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                7
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-1/4  md:w-auto z-10">
+                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                            <li
+                                class="font-medium text-[10px] font-Poppins  md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                Tickets & Booking</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs mt-1.5 lg:mt-4 md:mt-3 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                LINK 1</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                2
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                3
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-1/4 md:w-auto z-10">
+                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                            <li
+                                class="font-bold text-[10px]  font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                Contact Us</li>
+                            <li
+                                class="font-bold text-[7px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                LINK 1</li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                2
+                            </li>
+                            <li
+                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                LINK
+                                3
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex justify-end -mt-3 xl:px-16 xl:-mt-0 xl:mr-16 md:mr-8 lg:mr-10">
+                <ul class="flex flex-col">
+                    <li class="flex justify-center z-10">
+                        <h1 class="font-medium text-[10px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">
+                            Social</h1>
+                    </li>
+                    <li class="mt-2 md:mt-3 xl:mt-6 z-10">
+                        <ul class="flex gap-3 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
+                            <li><img src="Assets/img/bxl-facebook.png" alt=""
+                                    class="w-1.5 md:w-2.5 lg:w-4 md: h-auto [@media(min-width:2048px)]:w-7"></li>
+                            <li><img src="Assets/img/instagram-logo.png" alt=""
+                                    class="w-2.5 md:w-3.5 lg:w-6 h-auto [@media(min-width:2048px)]:w-11"></li>
+                            <li><img src="Assets/img/youtube-logo.png" alt=""
+                                    class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                            <li><img src="Assets/img/Object.png" alt=""
+                                    class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
