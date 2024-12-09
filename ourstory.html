@@ -13,30 +13,7 @@
 
     <link href="./output.css" rel="stylesheet" />
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-
-                    animation: {
-                        'spin-slow': 'spinCircle 18s linear infinite',
-                        'image-spin': 'imageSpin 18s linear infinite',
-                    },
-                    keyframes: {
-                        spinCircle: {
-                            '0%': { transform: 'rotate(0deg)' },
-                            '100%': { transform: 'rotate(360deg)' },
-                        },
-                        imageSpin: {
-                            '0%': { transform: 'rotate(0deg)' },
-                            '100%': { transform: 'rotate(-360deg)' },
-                        },
-                    },
-                },
-            },
-            plugins: [],
-        };
-    </script>
+    
 
 
 </head>
@@ -56,9 +33,9 @@
         <img src="Assets/img/Graphic.png" alt=""
             class="h-auto w-4 md:w-6 lg:w-7 xl:w-8 lg:mt-[450px] mt-[350px] md:mt-[400px] xl:mt-[540px] [@media(min-width:2048px)]:w-16 [@media(min-width:2048px)]:mt-[1050px]" />
     </div>
-    <div class="absolute  pl-56 md:ml-96 lg:ml-[590px] xl:ml-[1000px] [@media(min-width:2048px)]:ml-[1800px]">
+    <div class="absolute  pl-64 md:ml-96 lg:ml-[590px] xl:ml-[1000px] [@media(min-width:2048px)]:ml-[1800px]">
         <img src="Assets/img/Graphic (1).png" alt=""
-            class="w-20 h-auto mt-[260px] md:w-28  md:mt-[360px] lg:w-32 lg:mt-[420px] xl:w-40 xl:mt-[500px] [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:mt-[950px]" />
+            class="w-20 h-auto mt-[280px] md:w-28  md:mt-[360px] lg:w-32 lg:mt-[420px] xl:w-40 xl:mt-[500px] [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:mt-[950px]" />
     </div>
 
 
@@ -69,7 +46,7 @@
             <div
                 class="container gap-0 flex items-center justify-between p-5 lg:p-0 bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
                 <div id="nav-menu"
-                    class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full sm:w-0 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto ">
+                    class="bg-black z-50 absolute top-0 left-[-100%] min-h-[100vh] w-full sm:w-0 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto ">
                     <ul class="flex flex-col items-center gap-6 lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6 ">
                         <li>
                             <a href="index.html"
@@ -108,14 +85,7 @@
                 <div id="nav-menu"
                     class="absolute top-0 left-[-100%] min-h-[100vh] w-full flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:w-auto ">
                     <ul class="flex flex-col items-center gap-5 lg:flex-row xl:gap-6">
-                        <!-- <li>
-                            <button
-                                class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
-                                <a href="signup.html"
-                                    class="[@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Sign
-                                    up</a>
-                            </button>
-                        </li> -->
+                 
                         <li>
                             <button
                                 class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
@@ -141,33 +111,35 @@
 
 
 
-    <section>
+    <section class="">
         <div
-            class="flex flex-col justify-center items-center gap-4 md:gap-5 lg:gap-7 [@media(min-width:2048px)]:gap-14  py-[120px] lg:py-24 [@media(min-width:2048px)]:py-[260px]">
+            class=" flex flex-col justify-center items-center gap-4 md:gap-5 lg:gap-7 [@media(min-width:2048px)]:gap-14  py-[120px] lg:py-24 [@media(min-width:2048px)]:py-[260px]">
 
 
-            <!-- <div class="w-[88%] md:w-[85%] [@media(min-width:2048px)]:w-4/5 lg:w-4/5 h-auto"><img
-                    src="Assets/img/Image Slider (1).png" alt=""
-                    class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full"></div> -->
+
 
 
             <div
-                class="swiper mySwiper w-[88%] md:w-[85%] rounded-2xl overflow-hidden bg-transparent [@media(min-width:2048px)]:w-4/5 lg:w-4/5 h-auto">
-                <div class="swiper-wrapper">
+                class="swiper mySwiper  w-[88%] md:w-[85%] lg:w-[80%] lg:rounded-3xl xl:w-[75%] h-full overflow-hidden bg-transparent rounded-2xl">
+                <div class="swiper-wrapper ">
 
-                    <div
-                        class="flex justify-center rounded-2xl overflow-hidden bg-transparent text-center items-center">
+                    <div class="swiper-slide  rounded-2xl lg:rounded-3xl overflow-hidden bg-transparent"><img
+                            src="Assets/img/Image Slider (1).png" alt=""
+                            class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full object-cover"></div>
+                    <div class="swiper-slide swiper-slide rounded-2xl lg:rounded-3xl overflow-hidden bg-transparent">
                         <img src="Assets/img/Image Slider (1).png" alt=""
-                            class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full block h-auto object-cover">
-                    </div>
-
-                    <div class="swiper-slide"><img src="Assets/img/Image Slider (1).png" alt=""
                             class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full"></div>
-                    <div class="swiper-slide"><img src="Assets/img/Image Slider (1).png" alt=""
+                    <div class="swiper-slide swiper-slide rounded-2xl lg:rounded-3xl overflow-hidden bg-transparent">
+                        <img src="Assets/img/Image Slider (1).png" alt=""
                             class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full"></div>
-                    <div class="swiper-slide"><img src="Assets/img/Image Slider (1).png" alt=""
+                    <div class="swiper-slide swiper-slide rounded-2xl lg:rounded-3xl overflow-hidden bg-transparent">
+                        <img src="Assets/img/Image Slider (1).png" alt=""
                             class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full"></div>
-                    <div class="swiper-slide"><img src="Assets/img/Image Slider (1).png" alt=""
+                    <div class="swiper-slide swiper-slide rounded-2xl lg:rounded-3xl overflow-hidden bg-transparent">
+                        <img src="Assets/img/Image Slider (1).png" alt=""
+                            class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full"></div>
+                    <div class="swiper-slide swiper-slide rounded-2xl lg:rounded-3xl overflow-hidden bg-transparent">
+                        <img src="Assets/img/Image Slider (1).png" alt=""
                             class="rounded-2xl [@media(min-width:2048px)]:rounded-[50px] w-full"></div>
 
                 </div>
@@ -339,24 +311,24 @@
                 <img src="Assets/img/Group (333).png" alt="" class="absolute w-2/3 xl:w-[55%] h-auto z-[-1]">
                 <div class="flex flex-col w-full">
                     <div
-                        class="flex flex-row justify-evenly -mt-3.5 md:-mt-8 lg:-mt-10 xl:-mt-11 [@media(min-width:2048px)]:-mt-24 [@media(min-width:2048px)]:mr-20">
+                        class="flex flex-row justify-around md:justify-evenly -mt-4 mr-5 md:-mt-8 lg:-mt-10 xl:-mt-11 [@media(min-width:2048px)]:-mt-24 [@media(min-width:2048px)]:mr-20">
                         <img src="Assets/img/Vector (51).png" alt=""
-                            class="w-11 h-11 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72">
+                            class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72">
 
                         <img src="Assets/img/Vector (61).png" alt=""
-                            class="w-11 h-11 -mt-0.5 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72">
+                            class="w-12 h-12 -mt-0.5 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72">
                     </div>
-                    <div class="flex flex-row justify-center mt-1 md:mt-6 lg:mt-7 xl:mt-12 ">
+                    <div class="flex flex-row justify-center mt-2 md:mt-6 lg:mt-7 xl:mt-12 ">
                         <img src="Assets/img/Vector (611).png" alt=""
-                            class="w-11 h-11 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72">
+                            class="w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72">
 
                     </div>
                     <div
-                        class="flex flex-row justify-around mt-1 md:mt-4 lg:mt-6 xl:mt-11 [@media(min-width:2048px)]:mt-4">
+                        class="flex flex-row justify-around mt-2 md:mt-4 lg:mt-6 xl:mt-11 [@media(min-width:2048px)]:mt-4">
                         <img src="Assets/img/Vector (6).png" alt=""
-                            class="ml-3.5 md:ml-8 w-11 h-11 md:w-24 md:h-24 lg:w-32 xl:ml-36 lg:h-32 lg:ml-10 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72 [@media(min-width:2048px)]:ml-80">
+                            class="ml-3.5 md:ml-8 w-12 h-12 md:w-24 md:h-24 lg:w-32 xl:ml-36 lg:h-32 lg:ml-10 xl:w-36 xl:h-36 [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72 [@media(min-width:2048px)]:ml-80">
                         <img src="Assets/img/Vector (600).png" alt=""
-                            class=" w-11 h-11 md:w-24 md:h-24 lg:w-32 lg:h-32   xl:w-[155px] xl:h-[155px] [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72 [@media(min-width:2048px)]:mr-60">
+                            class=" w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32   xl:w-[155px] xl:h-[155px] [@media(min-width:2048px)]:w-72 [@media(min-width:2048px)]:h-72 [@media(min-width:2048px)]:mr-60">
                     </div>
                 </div>
             </div>
@@ -377,13 +349,13 @@
             class=" px-7 py-8 md:mt-32 md:px-12 xl:px-20 [@media(min-width:2048px)]:mt-60 [@media(min-width:2048px)]:py-32 [@media(min-width:2048px)]:px-40">
             <ul class="flex flex-col gap-8 md:gap-12 xl:gap-16 [@media(min-width:2048px)]:gap-28">
                 <li>
-                    <ul class="flex flex-col md:flex-row gap-4 xl:gap-16">
-                        <li class="md:w-[55%] xl: md:h-auto"><img src="Assets/img/Image (3).png" alt=""
+                    <ul class="flex flex-col md:flex-row gap-4 xl:gap-16 z-50">
+                        <li class="md:w-[55%] xl: md:h-auto z-50"><img src="Assets/img/Image (3).png" alt=""
                                 class="w-full h-auto rounded-3xl"></li>
                         <li
                             class="md:w-[45%] md:h-auto flex md:items-center lg:p-5 p-2 [@media(min-width:2048px)]:p-10">
                             <p
-                                class="font-normal text-center text-xs lg:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl ">
+                                class="font-normal text-center text-xs lg:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl z-50">
                                 Alex Carter is a skilled software engineer and
                                 tech consultant with expertise in
                                 full-stack development and cloud infrastructure. Known for solving complex problems,
@@ -455,7 +427,7 @@
 
 
 
-    <section class="[@media(min-width:2048px)]:mb-80 mt-8 mb-7">
+    <section class="[@media(min-width:2048px)]:mb-80 mt-8 mb-10 md:mb-20 lg:mb-32 xl:mb-40">
         <div class="mt-4 md:mt-16 lg:mt-24 xl:mt-32 [@media(min-width:2048px)]:mt-52  ">
             <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[85%] h-auto z-0">
             </div>
@@ -539,7 +511,6 @@
                             <li
                                 class="font-bold text-[13px] font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
                                 Contact Us</li>
-                            <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[30%]"></li> -->
 
                             <li
                                 class="font-bold text-[9px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
@@ -565,7 +536,6 @@
                         <h1 class="font-medium text-[13px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">
                             Social</h1>
                     </li>
-                    <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[17%]"></li> -->
                     <li class="mt-1 md:mt-3 xl:mt-6 z-10">
                         <ul class="flex gap-4 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
                             <li><img src="Assets/img/bxl-facebook.png" alt=""
@@ -582,6 +552,7 @@
             </div>
         </div>
     </section>
+
 
 
 
@@ -610,7 +581,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             navigation: {

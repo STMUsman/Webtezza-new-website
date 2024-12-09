@@ -9,6 +9,77 @@
 
     <link href="./output.css" rel="stylesheet" />
 
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .dropdown {
+            width: 220px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+        }
+
+        .form input {
+            width: 170px;
+            border: none;
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form button {
+            width: 50px;
+            border: none;
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form input:focus,
+        .form button:focus {
+            outline: none;
+        }
+
+        .form .fa-chevron-down {
+            transition: transform 0.6s;
+        }
+
+        .form .fa-chevron-down.active {
+            transform: rotate(180deg);
+        }
+
+        .dropdownList {
+            display: none;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .dropdownList li {
+            padding: 10px;
+        }
+
+        .dropdownList li:hover {
+            background-color: #333;
+            transition: background-color 0.5s ease;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+
 </head>
 
 <body class="bg-black w-full h-full relative">
@@ -93,11 +164,11 @@
 
     <section>
         <div
-            class="w-full mt-24 md:mt-16 md:mb-10 [@media(min-width:2048px)]:mt-72 [@media(min-width:2048px)]:mb-0 xl:mt-28 ">
+            class="w-full mt-10 md:mt-20 md:mb-10 lg:mt-32 [@media(min-width:2048px)]:mt-72 [@media(min-width:2048px)]:mb-0 xl:mt-28 ">
             <div class="w-full relative flex flex-col justify-center z-[-1]">
-                <img src="Assets/img/logo (6).png" alt=""
-                    class="absolute w-60 h-auto md:mt-16 mt-28 md:w-[500px] lg:w-[650px] xl:w-[1000px] [@media(min-width:2048px)]:w-[1500px] [@media(min-width:2048px)]:mt-24">
-
+                <div class="flex  justify-center z-[-10]"><img src="Assets/img/logo (3).png" alt=""
+                        class="absolute w-60  h-auto md:-mt-10 mt-5 lg:-mt-20 md:w-[500px] lg:w-[650px] xl:w-[900px] [@media(min-width:2048px)]:w-[1500px] [@media(min-width:2048px)]:-mt-40">
+                </div>
                 <div class="w-full h-auto bg-transparent z-50 flex justify-center p-2">
                     <h2
                         class="text-[9px] md:text-[13px] xl:text-xl [@media(min-width:2048px)]:text-4xl [@media(min-width:2048px)]:rounded-full [@media(min-width:2048px)]:px-16 [@media(min-width:2048px)]:py-4 font-medium px-4 py-1 xl:px-5 border-2 w-fit border-[#1E1AB2] rounded-3xl flex justify-center items-center">
@@ -276,10 +347,14 @@
         </div>
     </section>
 
+   
+
+
+    <!-- service 1 -->
     <section>
-        <div class="w-full relative  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
             <div class="w-full relative flex justify-center mt-4  z-50">
-                <img src="Assets/img/des.png" alt="" class="absolute -mt-20 xl:-mt-40">
+                <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
 
 
                 <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
@@ -307,7 +382,8 @@
                         <li class="w-full">
                             <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
                                 <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
-                                    <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex "></li>
+                                    <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                                </li>
                                 <li
                                     class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
                                     <ul class="flex flex-col gap-2">
@@ -321,7 +397,8 @@
                                 </li>
                                 <li
                                     class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
-                                    <ul class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <ul
+                                        class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
                                         <li
                                             class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
                                             Insert
@@ -338,9 +415,12 @@
                                 <li
                                     class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
                                     <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
-                                        class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto"></li>
-                                <li class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
-                                    <img src="Assets/img/Frame 21.png" alt="" class="w-full "></li>
+                                        class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                                </li>
+                                <li
+                                    class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                    <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                                </li>
                                 <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
                                     <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
                                         class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
@@ -349,20 +429,23 @@
                         </li>
                         <li class="w-full">
                             <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
-                                <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0"><img
-                                        src="Assets/img/Group 132.png" alt="">
+                                <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                    <img src="Assets/img/Group 132.png" alt="">
                                 </li>
                                 <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
                                     <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
-                                        class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl"></li>
+                                        class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                                </li>
                             </ul>
                         </li>
                         <li class="w-full">
                             <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
                                 <li
                                     class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
-                                    <img src="Assets/img/Frame 210.png" alt="" class=""></li>
-                                <li class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                    <img src="Assets/img/Frame 210.png" alt="" class="">
+                                </li>
+                                <li
+                                    class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
                                     <ul class="w-[70%] flex flex-row justify-center">
                                         <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
                                         <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
@@ -373,6 +456,14 @@
                         </li>
                     </ul>
                 </div>
+                <div
+                    class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                    <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+                </div>
+                <div
+                    class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                    <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+                </div>
             </div>
 
         </div>
@@ -380,169 +471,1080 @@
     </section>
 
 
-    <section>
-        <div class="flex relative justify-center mt-5 [@media(min-width:2048px)]:mt-32">
-           
 
-                <div class="w-[90%] xl:w-[80%] h-auto ">
-                    <ul class="flex flex-row gap-2 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
-                        <li
-                            class="w-[30%] service rounded-xl xl:rounded-3xl font-medium text-[8px] xl:text-base md:text-xs md:px-4 px-2 py-4 xl:px-10 justify-center items-center [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:py-10">
-                            Easy drag & drop your ideas to make our work best
-                        </li>
-                        <li class="w-[40%] service rounded-xl xl:rounded-3xl  py-4 flex justify-center items-center">
-                            <ul class="flex gap-1.5 flex-col md:gap-2.5">
-                                <li class="flex justify-center items-center"><img src="Assets/img/photos.png" alt=""
-                                        class="w-[80%]"></li>
-                                <li
-                                    class="font-medium text-xs flex justify-center items-center md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
-                                    See Client says</li>
-                            </ul>
-                        </li>
-                        <li class="w-[30%] flex justify-between">
-                            <ul class="flex flex-col w-full gap-2 xl:gap-4 [@media(min-width:2048px)]:gap-8">
-                                <li class="service flex items-center rounded-xl xl:rounded-3xl w-full h-full">
-                                    <ul class="p-1.5 flex flex-col items-center gap-2 lg:p-4 xl:gap-4 [@media(min-width:2048px)]:gap-6 [@media(min-width:2048px)]:p-10">
-                                        <li class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">Logo Desing
-                                        </li>
-                                        <li class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">Web
-                                            Development</li>
-                                        <li class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">Digital
-                                            Marketing</li>
-                                    </ul>
-                                </li>
-                                <li class="flex items-end z-[50]"><button
-                                        class="font-semibold text-[10px] md:text-xs w-full bg-[#1570EF] rounded-xl xl:rounded-3xl [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:py-10  py-1.5 md:py-2.5 lg:py-4 xl:text-base xl:py-5"><a
-                                            href="#book">Book a Call</a></button></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+
+
+<!-- service 2 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- service 3 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- service 4 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- service 5 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- service 6 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- service 7 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- service 8 -->
+<section class="hidden">
+    <div class="w-full relative z-[-1]  h-auto flex justify-center mt-6 xl:mt-28 [@media(min-width:2048px)]:mt-60">
+        <div class="w-full relative flex justify-center mt-4  z-50">
+            <img src="Assets/img/des.png" alt="" class="absolute mt-5 xl:-mt-40">
+
+
+            <div class="w-[90%] md:w-[90%] xl:w-[80%] py-3 h-full flex justify-center items-center z-50">
+                <ul class="w-full h-full flex flex-col gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class=" p-1 md:p-3 lg:p-5 xl:p-10 flex justify-center items-center service rounded-xl xl:rounded-3xl w-3/5  font-medium text-xs md:text-xl lg:text-2xl xl:text-3xl [@media(min-width:2048px)]:text-5xl [@media(min-width:2048px)]:p-20">
+                                App development </li>
+                            <li
+                                class="p-1 md:p-3 lg:p-5 xl:py-10 xl:px-40 flex items-center text-center justify-center service rounded-xl xl:rounded-3xl w-2/5  font-medium text-[8px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Machine learning suggestions</li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="p-1 md:p-2 xl:p-5 flex justify-center text-center items-center service rounded-xl xl:rounded-3xl w-2/5  text-[6px] md:text-sm xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                Alex Carter is a skilled software engineer and tech consultant with expertise in
+                                full-stack development and cloud infrastructure.</li>
+                            <li class="w-3/5 flex xl:rounded-3xl  rounded-xl"><img src="Assets/img/Frame (1).png"
+                                    alt="" class="rounded-xl xl:rounded-3xl w-full overflow-hidden"></li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-[25%] flex service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Frame 19.png" alt="" class="w-full h-auto flex ">
+                            </li>
+                            <li
+                                class="w-[40%] flex service justify-center items-center xl:rounded-3xl rounded-xl p-1.5 md:p-2.5">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex justify-center items-center"><img
+                                            src="Assets/img/Group 16 (1).png" alt=""></li>
+                                    <li
+                                        class="font-normal text-xs flex justify-center items-center md:text-sm xl:text-lg [@media(min-width:2048px)]:text-2xl">
+                                        Project Count
+                                    </li>
+                                </ul>
+                            </li>
+                            <li
+                                class="w-[35%] flex service justify-center items-center rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 lg:p-4 xl:p-10 xl:gap-5 [@media(min-width:2048px)]:p-20 [@media(min-width:2048px)]:gap-10">
+                                <ul
+                                    class="flex flex-row  gap-1 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                                    <li
+                                        class="font-normal text-[10px]   flex justify-center items-center md:text-sm xl:text-2xl [@media(min-width:2048px)]:text-4xl">
+                                        Insert
+                                        some
+                                        key statistic </li>
+                                    <li class="flex justify-center items-center"><img src="Assets/img/Group 16.png"
+                                            alt="" class="w-20 xl:w-32 h-auto"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-[30%] flex justify-center service rounded-xl xl:rounded-3xl p-1.5 md:p-2.5 [@media(min-width:2048px)]:p-7">
+                                <img src="Assets/img/Apple iPhone X Space Grey.png" alt=""
+                                    class="w-10 md:w-20 lg:w-32 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                            <li
+                                class="w-[40%] flex  service rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6 xl:p-10 [@media(min-width:2048px)]:p-20">
+                                <img src="Assets/img/Frame 21.png" alt="" class="w-full ">
+                            </li>
+                            <li class="w-[30%] flex  service rounded-xl xl:rounded-3xl justify-center items-center">
+                                <img src="Assets/img/Apple Watch Series 7 - 45mm - Midnight.png" alt=""
+                                    class="w-14 md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-72 h-auto">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li class="w-3/5 flex service rounded-xl xl:rounded-3xl  justify-center pt-3 md:pt-0">
+                                <img src="Assets/img/Group 132.png" alt="">
+                            </li>
+                            <li class="w-2/5 flex justify-end service rounded-xl xl:rounded-3xl overflow-hidden">
+                                <img src="Assets/img/Apple iPhone X Space Grey (122).png" alt=""
+                                    class="w-10 h-auto md:w-20 lg:w-32 xl:w-40 [@media(min-width:2048px)]:w-64 rounded-xl">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex w-full gap-3 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                            <li
+                                class="w-2/5 flex service justify-center xl:p-10 rounded-xl xl:rounded-3xl p-2 md:p-4 lg:p-6">
+                                <img src="Assets/img/Frame 210.png" alt="" class="">
+                            </li>
+                            <li
+                                class="w-3/5 flex service rounded-xl xl:rounded-3xl justify-center items-end [@media(min-width:2048px)]:pt-16">
+                                <ul class="w-[70%] flex flex-row justify-center">
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                    <li><img src="Assets/img/Apple iPhone X Space Grey00.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-10 md:mt-32 lg:mt-32 xl:mt-[100px] [@media(min-width:2048px)]:mt-[200px]">
+                <img src="Assets/img/Ellipse 911.png" alt="" class=" w-full h-auto">
+            </div>
+            <div
+                class="  w-full h-auto absolute mt-64 md:mt-[500px] lg:mt-[700px] xl:mt-[750px] [@media(min-width:2048px)]:mt-[1400px]">
+                <img src="Assets/img/Ellipse 10 (5).png" alt="" class=" w-full h-auto">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+    <section>
+        <div class="flex relative justify-center mt-5  [@media(min-width:2048px)]:mt-32">
+
+
+            <div class="w-[90%] xl:w-[80%] h-auto ">
+                <ul class="flex flex-row gap-2 lg:gap-4 xl:gap-5 [@media(min-width:2048px)]:gap-10">
+                    <li
+                        class="w-[30%] service rounded-xl xl:rounded-3xl font-medium text-[8px] xl:text-base md:text-xs md:px-4 px-2 py-4 xl:px-10 justify-center items-center [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:py-10">
+                        Easy drag & drop your ideas to make our work best
+                    </li>
+                    <li class="w-[40%] service rounded-xl xl:rounded-3xl  py-4 flex justify-center items-center">
+                        <ul class="flex gap-1.5 flex-col md:gap-2.5">
+                            <li class="flex justify-center items-center"><img src="Assets/img/photos.png" alt=""
+                                    class="w-[80%]"></li>
+                            <li
+                                class="font-medium text-xs flex justify-center items-center md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                See Client says</li>
+                        </ul>
+                    </li>
+                    <li class="w-[30%] flex justify-between">
+                        <ul class="flex flex-col w-full gap-2 xl:gap-4 [@media(min-width:2048px)]:gap-8">
+                            <li class="service flex items-center rounded-xl xl:rounded-3xl w-full h-full">
+                                <ul
+                                    class="p-1.5 flex flex-col items-center gap-2 lg:p-4 xl:gap-4 [@media(min-width:2048px)]:gap-6 [@media(min-width:2048px)]:p-10">
+                                    <li
+                                        class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                        Logo Desing
+                                    </li>
+                                    <li
+                                        class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                        Web
+                                        Development</li>
+                                    <li
+                                        class="font-medium text-[5px] w-full md:text-xs xl:text-base [@media(min-width:2048px)]:text-3xl">
+                                        Digital
+                                        Marketing</li>
+                                </ul>
+                            </li>
+                            <li class="flex items-end z-[50]"><button
+                                    class="font-semibold text-[10px] md:text-xs w-full bg-[#1570EF] rounded-xl xl:rounded-3xl [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:py-10  py-1.5 md:py-2.5 lg:py-4 xl:text-base xl:py-5"><a
+                                        href="#book">Book a Call</a></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </section>
 
     <!-- footer -->
-    <section class="mt-9 md:mt-20 lg:mt-20 xl:mt-28 [@media(min-width:2048px)]:mt-44 [@media(min-width:2048px)]:mb-60">
-        <div class="mt-4 md:mt-9 lg:mt-11 xl:mt-16 [@media(min-width:2048px)]:mt-32 ">
-            <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[85%] h-auto z-0">
+    <section class="relative">
+        <div class=" z-50 [@media(min-width:2048px)]:mb-80 mt-8 mb-10 md:mb-20 lg:mb-32 xl:mb-40">
+            <div class="mt-4 md:mt-16 lg:mt-24 xl:mt-32 [@media(min-width:2048px)]:mt-52  ">
+                <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt=""
+                        class="w-[85%] h-auto z-0">
+                </div>
             </div>
-        </div>
-        <div
-            class="py-3.5 px-8 md:py-6 md:px-10 lg:py-8 lg:px-12 xl:py-10 xl:px-14 xl:mt-6  [@media(min-width:2048px)]:mt-12">
-            <div class="flex justify-center xl:mr-20">
-                <ul class="flex  gap-2 md:gap-10 lg:gap-16 xl:gap-36 [@media(min-width:2048px)]:gap-60">
-                    <li class=" mt-1 w-1/4 md:w-auto z-10">
-                        <ul>
-                            <li><img src="Assets/img/Layer_1.png" alt=""
-                                    class="w-10 h-auto md:w-20 lg:w-28 xl:w-40 [@media(min-width:2048px)]:w-72"></li>
-                        </ul>
-                    </li>
-                    <li class="w-1/4 md:w-auto z-10">
-                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
-                            <li
-                                class="font-medium text-[10px] md:text-sm font-Poppins lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
-                                Learn More</li>
-                            <li
-                                class="font-bold text-[7px] mt-1.5 md:mt-3 lg:mt-4 md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
-                                LINK 1</li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                2
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                3
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                4
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                5
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                6
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                7
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="w-1/4  md:w-auto z-10">
-                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
-                            <li
-                                class="font-medium text-[10px] font-Poppins  md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
-                                Tickets & Booking</li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs mt-1.5 lg:mt-4 md:mt-3 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
-                                LINK 1</li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                2
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                3
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="w-1/4 md:w-auto z-10">
-                        <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
-                            <li
-                                class="font-bold text-[10px]  font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
-                                Contact Us</li>
-                            <li
-                                class="font-bold text-[7px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
-                                LINK 1</li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                2
-                            </li>
-                            <li
-                                class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
-                                LINK
-                                3
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <div
+                class="py-6 px-7 md:py-6 md:px-10 lg:py-8 lg:px-12 xl:py-10 xl:px-14 xl:mt-6  [@media(min-width:2048px)]:mt-12">
+                <div class="flex justify-start md:justify-center xl:mr-20">
+                    <ul
+                        class="flex flex-col md:flex-row  gap-6 md:gap-10 lg:gap-16 xl:gap-36 [@media(min-width:2048px)]:gap-60">
+                        <li class=" mt-1 w-full md:w-auto z-10">
+                            <ul>
+                                <li><img src="Assets/img/Layer_1.png" alt=""
+                                        class="w-16 h-auto md:w-20 lg:w-28 xl:w-40 [@media(min-width:2048px)]:w-72">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w-full md:w-auto z-10">
+                            <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                                <li
+                                    class="font-medium text-[13px] md:text-sm font-Poppins lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                    Learn More</li>
+                                <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[30%]"></li> -->
+                                <li
+                                    class="font-bold text-[9px] mt-1.5 md:mt-3 lg:mt-4 md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                    LINK 1</li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    2
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    3
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    4
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    5
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    6
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    7
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w-full  md:w-auto z-10">
+                            <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                                <li
+                                    class="font-medium text-[13px] font-Poppins  md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                    Tickets & Booking</li>
+                                <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[48%]"></li> -->
 
-            <div class="flex justify-end -mt-3 xl:px-16 xl:-mt-0 xl:mr-16 md:mr-8 lg:mr-10">
-                <ul class="flex flex-col">
-                    <li class="flex justify-center z-10">
-                        <h1 class="font-medium text-[10px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">
-                            Social</h1>
-                    </li>
-                    <li class="mt-2 md:mt-3 xl:mt-6 z-10">
-                        <ul class="flex gap-3 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
-                            <li><img src="Assets/img/bxl-facebook.png" alt=""
-                                    class="w-1.5 md:w-2.5 lg:w-4 md: h-auto [@media(min-width:2048px)]:w-7"></li>
-                            <li><img src="Assets/img/instagram-logo.png" alt=""
-                                    class="w-2.5 md:w-3.5 lg:w-6 h-auto [@media(min-width:2048px)]:w-11"></li>
-                            <li><img src="Assets/img/youtube-logo.png" alt=""
-                                    class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
-                            <li><img src="Assets/img/Object.png" alt=""
-                                    class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
-                        </ul>
-                    </li>
-                </ul>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs mt-1.5 lg:mt-4 md:mt-3 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                    LINK 1</li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    2
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    3
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w-full md:w-auto z-10">
+                            <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
+                                <li
+                                    class="font-bold text-[13px] font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                                    Contact Us</li>
+                                <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[30%]"></li> -->
+
+                                <li
+                                    class="font-bold text-[9px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                                    LINK 1</li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    2
+                                </li>
+                                <li
+                                    class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                                    LINK
+                                    3
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="flex justify-start md:justify-end mt-4 md:-mt-3 xl:px-16 xl:-mt-0 xl:mr-16 md:mr-8 lg:mr-10">
+                    <ul class="flex flex-col gap-1.5 md:gap-0">
+                        <li class="flex  justify-start md:justify-center z-10">
+                            <h1
+                                class="font-medium text-[13px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">
+                                Social</h1>
+                        </li>
+                        <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[17%]"></li> -->
+                        <li class="mt-1 md:mt-3 xl:mt-6 z-10">
+                            <ul class="flex gap-4 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
+                                <li><img src="Assets/img/bxl-facebook.png" alt=""
+                                        class="w-2.5 md:w-2.5 lg:w-4 md: h-auto [@media(min-width:2048px)]:w-7"></li>
+                                <li><img src="Assets/img/instagram-logo.png" alt=""
+                                        class="w-4 md:w-3.5 lg:w-6 h-auto [@media(min-width:2048px)]:w-11"></li>
+                                <li><img src="Assets/img/youtube-logo.png" alt=""
+                                        class="w-5 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                                <li><img src="Assets/img/Object.png" alt=""
+                                        class="w-5 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
+       
+
     </section>
+    <!-- <div class=" w-full h-auto flex items-start">
+            
+        <img src="Assets/img/Ellipse 12 (1).png" alt="" class="absolute w-full h-auto">
+    </div> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $(".dropdown").each(function () {
+                const $dropdown = $(this);
+                const $button = $dropdown.find(".button");
+                const $list = $dropdown.find(".dropdownList");
+                const $icon = $button.find(".fa-chevron-down");
+
+                $button.click(function (e) {
+                    e.preventDefault();
+                    $list.slideToggle(500);
+                    $icon.toggleClass("active");
+                });
+            });
+        });
+    </script> -->
+      
 
     <script src="main.js"></script>
 </body>

@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
-
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="./output.css" rel="stylesheet" />
 </head>
 
-<body class="container-box w-full h-screen bg-center bg-cover relative">
+<body class="container-box w-full h-screen bg-center bg-cover bg-no-repeat overflow-hidden relative">
+  
+    <!-- css animation -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id='title'>
+    </div>
+    <!-------->
+
 
     <div>
         <ul
@@ -88,86 +97,6 @@
             </div>
         </div>
     </div>
-
-
-
-    <!-- <div class="flex justify-center ">
-        <div class="login w-[30%] h-auto bg-[#131316] mt-32 px-12 pt-12 pb-10 rounded-3xl" id="loginbtn">
-            <div class="flex flex-col gap-4">
-                <h1 class="text-[#ffffff] font-semibold text-[28px] flex justify-center " id="title">Create an account
-                </h1>
-                <div class="gbutton" id="gbuttons"><button
-                        class="text-[#1570EF] bg-[#26272B] w-full flex justify-center items-center gap-3 rounded-lg p-2">
-                        <img src="Assets/img/Google - Original.png" alt="" class="w-5 h-5">
-                        Google
-                    </button>
-                </div>
-                <div class="text-[#98A2B3] font-semibold text-base flex justify-center items-center or" id="orcontent">
-                    Or</div>
-            </div>
-            <form class="flex flex-col gap-3 mt-7">
-                <div class="text-[#344054] font-normal text-base">Email</div>
-                <div><input type="text" placeholder="yourmail@gmail.com"
-                        class="text-[#344054] font-normal text-sm border-[#D1E9FF] border-[3px] w-full p-2 rounded-lg bg-transparent">
-                </div>
-                <div class="text-[#344054] font-normal text-base">Password</div>
-                <div><input type="text" placeholder="Enter your password"
-                        class="text-[#344054] font-normal text-sm w-full border-[#D0D5DD] border-[1px] p-2 rounded-lg bg-transparent">
-                </div>
-                <div class="inputs" id="namefield">
-                    <div class=" text-[#344054] font-normal text-base" id="reenterpw">Re Enter Password</div>
-                    <div class="inputs" id="reenterpw"><input type="text" placeholder="Enter your password"
-                        class="text-[#344054] font-normal text-sm w-full border-[#D0D5DD] border-[1px] p-2 rounded-lg bg-transparent">
-                    </div>
-                </div>
-                <div><button class="bg-[#1570EF] w-full rounded-lg p-2 mt-2" id="loginnow">Create Account</button></div>
-
-                <div class="flex justify-center items-center font-semibold text-base text-[#98A2B3]">Or</div>
-                <div class="googlebtn" id="gloginbtn "><button
-                        class="text-[#1570EF] bg-[#D1E9FF] w-full flex justify-center items-center gap-3 rounded-lg p-2">
-                        <img src="Assets/img/Google - Original.png" alt="" class="w-5 h-5">
-                        Login now
-                    </button>
-                </div> -->
-
-
-    <!-- </form>
-
-            <div class="btn flex justify-center items-center mt-4 gap-2">
-                <h2 class="text-[#98A2B3]" id="footercontent">Already have an account ?</h2>
-                <button class="text-[#1570EF] " id="signinbtn">Log in</button>
-            </div>
-        </div> -->
-    <!-- </div>  -->
-
-
-    <!-- <script>
-        let signinbtn = document.getElementById("signinbtn");
-        let namefield = document.getElementById("namefield");
-        let title = document.getElementById("title");
-        let footercontent = document.getElementById("footercontent");
-        let loginnow = document.getElementById("loginnow");
-        let gbuttons = document.getElementById("gbuttons");
-        let orcontent = document.getElementById("orcontent");
-        let loginbtn = document.getElementById("loginbtn");
-        let gloginbtn = document.getElementById("gloginbtn");
-
-        signinbtn.onclick = function () {
-            signinbtn.innerHTML = "Sign up";
-            namefield.style.maxHeight = "0";
-            gbuttons.style.maxHeight = "0";
-            title.innerHTML = "Login to your account";
-            footercontent.innerHTML = "Don't Have An Account ?";
-            loginnow.innerHTML = "Login Now";
-            orcontent.innerHTML = "";
-            loginbtn.style.backgroundColor = "white";
-            title.style.color = "black";
-            gloginbtn.classList.remove("hidden");
-
-        }
-
-
-    </script> -->
 
 
 

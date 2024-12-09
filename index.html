@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <link href="./output.css" rel="stylesheet" />
   <script>
@@ -14,8 +15,8 @@
         extend: {
 
           animation: {
-            'spin-slow': 'spinCircle 18s linear infinite',
-            'image-spin': 'imageSpin 18s linear infinite',
+            'spin-slow': 'spinCircle 40s linear infinite',
+            'image-spin': 'imageSpin 40s linear infinite',
           },
           keyframes: {
             spinCircle: {
@@ -32,6 +33,11 @@
       plugins: [],
     };
   </script>
+
+
+
+
+
 </head>
 
 <body class="bg-black w-full h-full relative">
@@ -99,7 +105,7 @@
         <div id="nav-menu"
           class="absolute top-0 left-[-100%] min-h-[100vh] w-full flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:w-auto ">
           <ul class="flex flex-col items-center gap-5 lg:flex-row xl:gap-6">
-            
+
             <li class="flex justify-center items-center">
               <button
                 class="nav-link w-28 xl:w-32 h-6 rounded-full border bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
@@ -108,10 +114,9 @@
               </button>
             </li>
             <li class="flex justify-center items-center">
-              <button
-                class="nav-link">
-                <a href="#profile"
-                  class=""><img src="Assets/img/icons8-male-user-48.png" alt="" class="lg:w-10 h-auto xl:w-12 [@media(min-width:2048px)]:w-20"> </a>
+              <button class="nav-link">
+                <a href="#profile" class=""><img src="Assets/img/icons8-male-user-48.png" alt=""
+                    class="lg:w-10 h-auto xl:w-12 [@media(min-width:2048px)]:w-20"> </a>
               </button>
             </li>
           </ul>
@@ -130,13 +135,13 @@
       <div class="relative flex justify-center z-[-1]">
         <img src="Assets/img/logo (6).png" alt="" class="absolute w-60 h-auto md:w-[550px] lg:w-[750px] xl:w-[1200px]">
         <div>
-          <div class="flex justify-center">
+          <div class="flex justify-center z-[-1]">
             <img src="Assets/img/Group 3595.png" alt=""
               class="w-64 h-auto md:w-5/12 lg:w-2/5 xl:w-[45%] z-10 [@media(min-width:2048px)]:w-[60%]" />
           </div>
-          <div class="justify-center flex">
+          <div class="justify-center flex z-50">
             <img src="Assets/img/image 3.png" alt=""
-              class="w-11/12 h-auto px-2 -mt-2 md:w-10/12 lg:pt-0 lg:w-10/12 xl:pt-0 xl:-mt-10 z-10 [@media(min-width:2048px)]:w-[1800px] " />
+              class="w-11/12 h-auto px-2 -mt-2 md:w-10/12 lg:pt-0 lg:w-10/12 xl:pt-0 xl:-mt-10 [@media(min-width:2048px)]:w-[1800px] z-50" />
           </div>
         </div>
       </div>
@@ -149,7 +154,7 @@
         </button>
       </div>
 
-      <div class="relative flex justify-end">
+      <div class="relative flex justify-end z-[-10]">
         <div class="absolute flex justify-end lg:-mt-4">
           <img src="Assets/img/Group 1000001781.png" alt=""
             class="-mt-36 w-56 md:-mt-80 md:w-2/3 lg:w-2/3 lg:-mt-96 xl:w-3/4 [@media(min-width:2048px)]:w-[1800px] [@media(min-width:2048px)]:-mt-[1300px]" />
@@ -375,55 +380,39 @@
       </div>
       <div class="flex justify-center">
         <div class="mt-6 w-3/4 xl:w-2/3 md:mt-14 lg:mt-16 xl:mt-20 [@media(min-width:2048px)]:mt-28">
-          <div class="flex justify-center px-6 lg:px-10 xl:px-12"><img src="Assets/img/Group (2220).png" alt=""
+          <div class="flex justify-center px-6 lg:px-10 xl:px-12"><img src="Assets/img/Group 1000001788.png" alt=""
               class="w-full h-auto">
           </div>
-          <div class="-mt-5 md:-mt-10 xl:-mt-14 [@media(min-width:2048px)]:-mt-28">
+          <div class="-mt-5 md:-mt-10 lg:-mt-12 xl:-mt-14 [@media(min-width:2048px)]:-mt-28">
             <ul
               class="flex justify-around md:justify-between lg:justify-between [@media(min-width:2048px)]:justify-between">
-              <li><img src="Assets/img/Vector (3).png" alt=""
+              <li><img src="Assets/img/Group 1000001789.png" alt=""
                   class="w-8 md:w-[70px] lg:w-24 xl:w-32 [@media(min-width:2048px)]:w-52 h-auto">
-                <div
-                  class="flex justify-center -mt-6 md:-mt-12 lg:-mt-[73px] xl:-mt-24 [@media(min-width:2048px)]:-mt-40">
-                  <img src="Assets/img/Group (1).png" alt=""
-                    class="w-5 md:w-8 lg:w-14 xl:w-16 [@media(min-width:2048px)]:w-28 h-auto">
-                </div>
+
               </li>
 
               <li class="flex justify-center items-center"><img src="Assets/img/Vector (1).png" alt=""
                   class="w-1.5 md:w-3 lg:w-4 xl:w-6 h-auto"></li>
 
-              <li><img src="Assets/img/Vector (4).png" alt=""
+              <li class="mr-5 md:mr-0"><img src="Assets/img/Group 1000001790.png" alt=""
                   class="w-8 md:w-[70px] lg:w-24 xl:w-32 [@media(min-width:2048px)]:w-52 h-auto">
-                <div
-                  class="flex justify-center -mt-6 md:-mt-12 lg:-mt-[73px] xl:-mt-24 [@media(min-width:2048px)]:-mt-40">
-                  <img src="Assets/img/Group (2).png" alt=""
-                    class="w-5 md:w-8 lg:w-14 xl:w-16 [@media(min-width:2048px)]:w-28  h-auto">
-                </div>
+
               </li>
 
               <li class="flex justify-center items-center"><img src="Assets/img/Vector (1).png" alt=""
                   class="w-1.5 md:w-3 lg:w-4 xl:w-6 h-auto"></li>
 
-              <li><img src="Assets/img/Vector (4).png" alt=""
+              <li><img src="Assets/img/Group 1000001791.png" alt=""
                   class="w-8 md:w-[70px] lg:w-24 xl:w-32 [@media(min-width:2048px)]:w-52 h-auto">
-                <div
-                  class="flex justify-center -mt-6 md:-mt-12 lg:-mt-[73px] xl:-mt-24 [@media(min-width:2048px)]:-mt-40">
-                  <img src="Assets/img/Group (3).png" alt=""
-                    class="w-5 md:w-8 lg:w-14 xl:w-16 [@media(min-width:2048px)]:w-28  h-auto">
-                </div>
+
               </li>
 
               <li class="flex justify-center items-center"><img src="Assets/img/Vector (1).png" alt=""
                   class="w-1.5 md:w-3 lg:w-4 xl:w-6 h-auto"></li>
 
-              <li><img src="Assets/img/Vector (3).png" alt=""
+              <li><img src="Assets/img/Group 1000001792.png" alt=""
                   class="w-8 md:w-[70px] lg:w-24 xl:w-32 [@media(min-width:2048px)]:w-52 h-auto">
-                <div
-                  class="flex justify-center -mt-6 md:-mt-12 lg:-mt-[73px] xl:-mt-24 [@media(min-width:2048px)]:-mt-40">
-                  <img src="Assets/img/Group (4).png" alt=""
-                    class="w-5 md:w-8 lg:w-14 xl:w-16 [@media(min-width:2048px)]:w-28  h-auto">
-                </div>
+
               </li>
             </ul>
           </div>
@@ -551,49 +540,66 @@
           <div class="mt-3 md:mt-8 lg:mt-10 xl:mt-12 w-full ">
             <ul class="flex flex-col gap-2 lg:gap-3 [@media(min-width:2048px)]:gap-7">
               <li class="z-0 flex justify-center">
-                <ul
-                  class="px-4 py-2 w-2/3  flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
-                  <li>Q1. Why i Choose</li>
-                  <li><button class="drop-btn"><img src="Assets/img/Vector (12).png" alt=""
+                <div
+                  class="dropdown  px-4 py-2 w-2/3  flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
+                  <div>Q1. Why i Choose</div>
+                  <!-- <li><button class="drop-btn"><img src="Assets/img/Vector (12).png" alt=""
                         class=" w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7"></button>
-                  </li>
-                </ul>
+                  </li> -->
+                  <div class="form">
+                    <button class="button "> <img src="Assets/img/Vector (12).png" alt=""
+                        class="fas fa-chevron-down w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7">
+                    </button>
+                  </div>
+                </div>
               </li>
               <li class="z-0 flex justify-center">
-                <ul
-                  class="px-4 py-2 w-2/3 flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
-                  <li>Q1. Why i Choose</li>
-                  <li><button class="drop-btn"><img src="Assets/img/Vector (12).png" alt=""
-                        class="drop-btn w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7"></button>
-                  </li>
-                </ul>
+                <div
+                  class="dropdown px-4 py-2 w-2/3  flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
+                  <div>Q1. Why i Choose</div>
+
+                  <div class="form">
+                    <button class="button "> <img src="Assets/img/Vector (12).png" alt=""
+                        class="fas fa-chevron-down w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7">
+                    </button>
+                  </div>
+                </div>
               </li>
               <li class="z-0 flex justify-center">
-                <ul
-                  class="px-4 py-2 w-2/3 flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
-                  <li>Q1. Why i Choose</li>
-                  <li><button class="drop-btn"><img src="Assets/img/Vector (12).png" alt=""
-                        class=" w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7"></button>
-                  </li>
-                </ul>
+                <div
+                  class="dropdown px-4 py-2 w-2/3  flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
+                  <div>Q1. Why i Choose</div>
+
+                  <div class="form">
+                    <button class="button "> <img src="Assets/img/Vector (12).png" alt=""
+                        class="fas fa-chevron-down w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7">
+                    </button>
+                  </div>
+                </div>
               </li>
               <li class="z-0 flex justify-center">
-                <ul
-                  class="px-4 py-2 w-2/3 flex justify-between items-center bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
-                  <li>Q1. Why i Choose</li>
-                  <li><button class="drop-btn"><img src="Assets/img/Vector (12).png" alt=""
-                        class=" w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7"></button>
-                  </li>
-                </ul>
+                <div
+                  class="dropdown px-4 py-2 w-2/3  flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
+                  <div>Q1. Why i Choose</div>
+
+                  <div class="form">
+                    <button class="button "> <img src="Assets/img/Vector (12).png" alt=""
+                        class="fas fa-chevron-down w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7">
+                    </button>
+                  </div>
+                </div>
               </li>
               <li class="z-0 flex justify-center">
-                <ul
-                  class="px-4 py-2 w-2/3 flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
-                  <li>Q1. Why i Choose</li>
-                  <li><button class="drop-btn"><img src="Assets/img/Vector (12).png" alt=""
-                        class=" w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7"></button>
-                  </li>
-                </ul>
+                <div
+                  class="dropdown px-4 py-2 w-2/3  flex justify-between items-center  bg-[#ffffff] bg-opacity-10 rounded-lg lg:rounded-xl [@media(min-width:2048px)]:rounded-3xl font-medium text-[9px] md:px-5 md:py-4 md:text-xs lg:px-6 lg:py-5 lg:text-sm xl:px-8 xl:py-5 xl:text-base [@media(min-width:2048px)]:px-12 [@media(min-width:2048px)]:py-10 [@media(min-width:2048px)]:text-3xl">
+                  <div>Q1. Why i Choose</div>
+
+                  <div class="form">
+                    <button class="button "> <img src="Assets/img/Vector (12).png" alt=""
+                        class="fas fa-chevron-down w-1.5 md:w-2.5 lg:w-3 xl:w-4 h-auto [@media(min-width:2048px)]:w-7">
+                    </button>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -603,7 +609,7 @@
           <div
             class="w-[90%] md:w-4/5 lg:w-4/5 xl:w-[75%] h-auto rounded-2xl md:rounded-3xl lg:rounded-3xl xl:rounded-3xl [@media(min-width:2048px)]:rounded-[40px] relative overflow-hidden">
             <div
-              class="absolute flex justify-end ml-32 md:ml-72 lg:ml-96  xl:ml-[590px] [@media(min-width:2048px)]:ml-[1000px]">
+              class="absolute flex justify-end ml-44 md:ml-80 lg:ml-[420px]  xl:ml-[550px] [@media(min-width:2048px)]:ml-[1000px]">
               <img src="Assets/img/Glass effect 1.png" alt=""
                 class="w-40 h-16 md:w-80 md:h-24 lg:w-[500px] lg:h-36 xl:w-[1000px] xl:h-[300px] [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:h-[400px]  object-cover">
             </div>
@@ -621,7 +627,7 @@
                 <li>
                   <form action="" class="relative flex items-center">
                     <input type="text" placeholder="Enter your email"
-                      class="w-36 md:w-80 text-[6px] lg:w-[450px] xl:w-[640px] lg:text-sm h-auto md:text-xs rounded-full p-1 md:p-2 lg:p-3 xl:p-5 [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:p-7" />
+                      class= "text-[#000] w-44 md:w-80 text-[6px] lg:w-[450px] xl:w-[640px] lg:text-sm h-auto md:text-xs rounded-full p-1 px-2 md:p-2 lg:p-3 xl:p-5 [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:p-7" />
                     <button type="submit"
                       class="w-[60px] text-[5px] p-1 md:w-28 lg:w-32 xl:w-36 xl:p-2 lg:p-1.5 h-auto rounded-3xl md:text-[10px] md:p-1 bg-[#010031] text-white absolute top-1/2 right-0.5 md:right-1 lg:right-2 xl:right-4 transform -translate-y-1/2 [@media(min-width:2048px)]:w-80 [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:right-6">
                       Subscribe Now
@@ -639,77 +645,93 @@
     </div>
   </section>
 
-
-  <section class="[@media(min-width:2048px)]:mb-80 mt-8 mb-7 xl:mb-20">
+  <!-- footer -->
+  <section class="[@media(min-width:2048px)]:mb-80 mt-8 mb-10 md:mb-20 lg:mb-32 xl:mb-40">
     <div class="mt-4 md:mt-16 lg:mt-24 xl:mt-32 [@media(min-width:2048px)]:mt-52  ">
-      <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[85%] h-auto z-0"></div>
+      <div class="flex justify-center "><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[85%] h-auto z-0">
+      </div>
     </div>
     <div
-      class="py-3.5 px-8 md:py-6 md:px-10 lg:py-8 lg:px-12 xl:py-10 xl:px-14 xl:mt-6  [@media(min-width:2048px)]:mt-12">
-      <div class="flex justify-center xl:mr-20">
-        <ul class="flex  gap-2 md:gap-10 lg:gap-16 xl:gap-36 [@media(min-width:2048px)]:gap-60">
-          <li class=" mt-1 w-1/4 md:w-auto z-10">
+      class="py-6 px-7 md:py-6 md:px-10 lg:py-8 lg:px-12 xl:py-10 xl:px-14 xl:mt-6  [@media(min-width:2048px)]:mt-12">
+      <div class="flex justify-start md:justify-center xl:mr-20">
+        <ul class="flex flex-col md:flex-row  gap-6 md:gap-10 lg:gap-16 xl:gap-36 [@media(min-width:2048px)]:gap-60">
+          <li class=" mt-1 w-full md:w-auto z-10">
             <ul>
               <li><img src="Assets/img/Layer_1.png" alt=""
-                  class="w-10 h-auto md:w-20 lg:w-28 xl:w-40 [@media(min-width:2048px)]:w-72"></li>
+                  class="w-16 h-auto md:w-20 lg:w-28 xl:w-40 [@media(min-width:2048px)]:w-72"></li>
             </ul>
           </li>
-          <li class="w-1/4 md:w-auto z-10">
+          <li class="w-full md:w-auto z-10">
             <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
               <li
-                class="font-medium text-[10px] md:text-sm font-Poppins lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                class="font-medium text-[13px] md:text-sm font-Poppins lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
                 Learn More</li>
+              <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[30%]"></li> -->
               <li
-                class="font-bold text-[7px] mt-1.5 md:mt-3 lg:mt-4 md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                class="font-bold text-[9px] mt-1.5 md:mt-3 lg:mt-4 md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
                 LINK 1</li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 2
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 3
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 4
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 5
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 6
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 7
               </li>
             </ul>
           </li>
-          <li class="w-1/4  md:w-auto z-10">
+          <li class="w-full  md:w-auto z-10">
             <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
               <li
-                class="font-medium text-[10px] font-Poppins  md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                class="font-medium text-[13px] font-Poppins  md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
                 Tickets & Booking</li>
+              <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[48%]"></li> -->
+
               <li
-                class="font-bold text-[7px] md:text-xs mt-1.5 lg:mt-4 md:mt-3 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                class="font-bold text-[9px] md:text-xs mt-1.5 lg:mt-4 md:mt-3 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
                 LINK 1</li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 2
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 3
               </li>
             </ul>
           </li>
-          <li class="w-1/4 md:w-auto z-10">
+          <li class="w-full md:w-auto z-10">
             <ul class="flex flex-col gap-0.5 xl:gap-1.5 [@media(min-width:2048px)]:gap-2.5">
               <li
-                class="font-bold text-[10px]  font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                class="font-bold text-[13px] font-Poppins md:text-sm lg:text-lg xl:text-lg [@media(min-width:2048px)]:text-4xl">
                 Contact Us</li>
+              <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[30%]"></li> -->
+
               <li
-                class="font-bold text-[7px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
+                class="font-bold text-[9px] mt-1.5 md:text-xs md:mt-3 lg:mt-4 lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:mt-4">
                 LINK 1</li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 2
               </li>
-              <li class="font-bold text-[7px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">LINK
+              <li class="font-bold text-[9px] md:text-xs lg:text-sm xl:text-sm [@media(min-width:2048px)]:text-2xl">
+                LINK
                 3
               </li>
             </ul>
@@ -717,21 +739,23 @@
         </ul>
       </div>
 
-      <div class="flex justify-end -mt-3 xl:px-16 xl:-mt-0 xl:mr-16 md:mr-8 lg:mr-10">
-        <ul class="flex flex-col">
-          <li class="flex justify-center z-10">
-            <h1 class="font-medium text-[10px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">Social</h1>
+      <div class="flex justify-start md:justify-end mt-4 md:-mt-3 xl:px-16 xl:-mt-0 xl:mr-16 md:mr-8 lg:mr-10">
+        <ul class="flex flex-col gap-1.5 md:gap-0">
+          <li class="flex  justify-start md:justify-center z-10">
+            <h1 class="font-medium text-[13px] md:text-sm lg:text-lg [@media(min-width:2048px)]:text-2xl">
+              Social</h1>
           </li>
-          <li class="mt-2 md:mt-3 xl:mt-6 z-10">
-            <ul class="flex gap-3 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
+          <!-- <li><img src="Assets/img/Vector 5 (1).png" alt="" class="w-[17%]"></li> -->
+          <li class="mt-1 md:mt-3 xl:mt-6 z-10">
+            <ul class="flex gap-4 md:gap-4 lg:gap-5 xl:gap-12 justify-center items-center">
               <li><img src="Assets/img/bxl-facebook.png" alt=""
-                  class="w-1.5 md:w-2.5 lg:w-4 md: h-auto [@media(min-width:2048px)]:w-7"></li>
+                  class="w-2.5 md:w-2.5 lg:w-4 md: h-auto [@media(min-width:2048px)]:w-7"></li>
               <li><img src="Assets/img/instagram-logo.png" alt=""
-                  class="w-2.5 md:w-3.5 lg:w-6 h-auto [@media(min-width:2048px)]:w-11"></li>
+                  class="w-4 md:w-3.5 lg:w-6 h-auto [@media(min-width:2048px)]:w-11"></li>
               <li><img src="Assets/img/youtube-logo.png" alt=""
-                  class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                  class="w-5 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
               <li><img src="Assets/img/Object.png" alt=""
-                  class="w-3 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
+                  class="w-5 md:w-4 lg:w-7 h-auto [@media(min-width:2048px)]:w-12"></li>
             </ul>
           </li>
         </ul>
@@ -740,6 +764,24 @@
   </section>
 
 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $(".dropdown").each(function () {
+        const $dropdown = $(this);
+        const $button = $dropdown.find(".button");
+        const $list = $dropdown.find(".dropdownList");
+        const $icon = $button.find(".fa-chevron-down");
+
+        $button.click(function (e) {
+          e.preventDefault();
+          $list.slideToggle(500);
+          $icon.toggleClass("active");
+        });
+      });
+    });
+  </script>
 
   <script src="main.js"></script>
 
