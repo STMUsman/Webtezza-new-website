@@ -52,19 +52,19 @@
 
   <div class="absolute pl-3 md:pl-24 lg:pl-44 xl:pl-56">
     <img src="Assets/img/Graphic (1).png" alt=""
-      class="w-16 h-auto mt-80 pt-28 md:w-28 md:mt-72 md:pt-52 lg:w-32 lg:mt-44 lg:pt-96 xl:mt-72 xl:w-36 [@media(min-width:2048px)]:w-80 [@media(min-width:2048px)]:mt-[900px] [@media(min-width:2048px)]:ml-72" />
+      class="w-20 h-auto mt-[308px] pt-28 md:w-28 md:mt-72 md:pt-52 lg:w-32 lg:mt-[180px] lg:pt-96 xl:mt-72 xl:w-36 [@media(min-width:2048px)]:w-80 [@media(min-width:2048px)]:mt-[900px] [@media(min-width:2048px)]:ml-72" />
   </div>
 
-  <div class="absolute mt-72 flex justify-end w-full pr-5 md:pr-12 md:mt-72 lg:pr-32 [@media(min-width:2048px)]:pr-64">
+  <div class="absolute mt-72 flex justify-end w-full pr-5 md:pr-12 md:mt-72 lg:pr-20 [@media(min-width:2048px)]:pr-64">
     <img src="Assets/img/Graphic.png" alt=""
-      class="w-3.5 h-auto md:w-6 lg:w-7 xl:w-8 [@media(min-width:2048px)]:w-16 [@media(min-width:2048px)]:mt-80" />
+      class="w-4 h-auto md:w-6 lg:w-7 xl:w-8 [@media(min-width:2048px)]:w-16 [@media(min-width:2048px)]:mt-80" />
   </div>
 
-  <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10">
+  <!-- <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10 ">
     <nav id="navbar"
       class=" nav-class sm:border sm:rounded-full sm:px-6 sm:items-center sm:content-center lg:border lg:rounded-full lg:px-5 lg:items-center lg:content-center xl:px-10 [@media(min-width:2048px)]:w-[2000px] [@media(min-width:2048px)]:h-28">
       <div
-        class="container gap-0 flex items-center justify-between p-5 lg:p-0 bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
+        class="container  gap-0 flex items-center justify-between p-5 lg:p-0 bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
         <div id="nav-menu"
           class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full sm:w-0 flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto ">
           <ul class="flex flex-col items-center gap-6 lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6 ">
@@ -126,12 +126,139 @@
         </div>
       </div>
     </nav>
-  </header>
+  </header> -->
+
+
+
+
+
+<header>
+<!-- mobile view -->
+ <div class="lg:hidden xl:hidden [@media(min-width:2048px)]:hidden   justify-center ">
+    <nav id="navbar"
+      class=" nav-class bg-black  p-5 items-center flex w-full h-auto content-center fixed z-50">
+      <div
+        class="container  gap-0 flex items-center justify-between  bg-transparent ">
+        <div id="nav-menu"
+          class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full  flex items-center justify-center duration-300 overflow-hidden">
+          <ul class="flex flex-col items-center gap-6  bg-transparent ">
+            <li>
+              <a href="index.html"
+                class="nav-link  ">Home</a>
+            </li>
+            <li>
+              <a href="ourstory.html"
+                class="nav-link ">OurStory</a>
+            </li>
+            <li>
+              <a href="service.html"
+                class="nav-link ">Service</a>
+            </li>
+            <li>
+              <a href="contact.html"
+                class="nav-link ">Contact
+                Us</a>
+            </li>
+            <li>
+              <button>
+                <a href="signup.html" class="nav-link">Sign up</a>
+              </button>
+            </li>
+            <li>
+              <button>
+                <a href="login.html" class="nav-link">Login</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:pr-36 ">
+          <img src="Assets/img/logo (2).png" alt=""
+            class="w-40 h-auto" />
+        </div>
+    
+        <div class="text-xl cursor-pointer z-50  ">
+          <i class="ri-menu-line" id="hamburger"></i>
+        </div>
+      </div>
+    </nav>
+ </div>
+
+
+
+
+<!-- tablet size after screen size -->
+  <div class="hidden lg:static lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10 ">
+    <nav id="navbar"
+      class=" nav-class  lg:border lg:rounded-full lg:px-5 lg:items-center lg:content-center xl:px-10 [@media(min-width:2048px)]:w-[2000px] [@media(min-width:2048px)]:h-28 fixed z-50">
+      <div
+        class="container  lg:flex lg:items-center lg:justify-between lg:p-0 lg:bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
+        <ul class="lg:flex lg:items-center lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6 ">
+          <li>
+            <a href="index.html"
+              class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold ">Home</a>
+          </li>
+          <li>
+            <a href="ourstory.html"
+              class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">OurStory</a>
+          </li>
+          <li>
+            <a href="service.html"
+              class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Service</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Contact
+              Us</a>
+          </li>
+          <li>
+            <button>
+              <a href="signup.html" class="nav-link lg:hidden">Sign up</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="login.html" class="nav-link lg:hidden">Login</a>
+            </button>
+          </li>
+        </ul>
+
+
+        <div class="lg:pr-36 xl:pr-[155px] [@media(min-width:2048px)]:pr-[180px]">
+          <img src="Assets/img/logo (2).png" alt=""
+            class="lg:w-52 lg:h-auto xl:w-56 [@media(min-width:2048px)]:w-[360px]" />
+        </div>
+
+        <ul class="lg:flex  lg:items-center lg:gap-5 lg:flex-row xl:gap-6">
+
+          <li class="lg:flex lg:justify-center lg:items-center">
+            <button
+              class="nav-link lg:w-28 xl:w-32 lg:h-6 lg:rounded-full lg:border lg:bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
+              <a href="login.html"
+                class="[@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Login</a>
+            </button>
+          </li>
+          <li class="lg:flex lg:justify-center lg:items-center">
+            <button class="nav-link">
+              <a href="#profile" class=""><img src="Assets/img/icons8-male-user-48.png" alt=""
+                  class="lg:w-10 lg:h-auto xl:w-12 [@media(min-width:2048px)]:w-20"> </a>
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
 
   <!-- Hero -->
 
   <section>
-    <div class="pt-40 flex flex-col md:pt-32 lg:pt-24 xl:pt-16 [@media(min-width:2048px)]:pt-64">
+    <div class="pt-52 flex flex-col md:pt-32 lg:pt-44 xl:pt-32 [@media(min-width:2048px)]:pt-64">
       <div class="relative flex justify-center z-[-1]">
         <img src="Assets/img/logo (6).png" alt="" class="absolute w-60 h-auto md:w-[550px] lg:w-[750px] xl:w-[1200px]">
         <div>
@@ -627,7 +754,7 @@
                 <li>
                   <form action="" class="relative flex items-center">
                     <input type="text" placeholder="Enter your email"
-                      class= "text-[#000] w-44 md:w-80 text-[6px] lg:w-[450px] xl:w-[640px] lg:text-sm h-auto md:text-xs rounded-full p-1 px-2 md:p-2 lg:p-3 xl:p-5 [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:p-7" />
+                      class="text-[#000] w-44 md:w-80 text-[6px] lg:w-[450px] xl:w-[640px] lg:text-sm h-auto md:text-xs rounded-full p-1 px-2 md:p-2 lg:p-3 xl:p-5 [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:p-7" />
                     <button type="submit"
                       class="w-[60px] text-[5px] p-1 md:w-28 lg:w-32 xl:w-36 xl:p-2 lg:p-1.5 h-auto rounded-3xl md:text-[10px] md:p-1 bg-[#010031] text-white absolute top-1/2 right-0.5 md:right-1 lg:right-2 xl:right-4 transform -translate-y-1/2 [@media(min-width:2048px)]:w-80 [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:right-6">
                       Subscribe Now

@@ -8,30 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
 
     <link href="./output.css" rel="stylesheet" />
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
 
-                    animation: {
-                        'spin-slow': 'spinCircle 10s linear infinite',
-                        'image-spin': 'imageSpin 10s linear infinite',
-                    },
-                    keyframes: {
-                        spinCircle: {
-                            '0%': { transform: 'rotate(0deg)' },
-                            '100%': { transform: 'rotate(360deg)' },
-                        },
-                        imageSpin: {
-                            '0%': { transform: 'rotate(0deg)' },
-                            '100%': { transform: 'rotate(-360deg)' },
-                        },
-                    },
-                },
-            },
-            plugins: [],
-        };
-    </script>
 </head>
 
 <body class="bg-black w-full h-full relative">
@@ -49,7 +26,7 @@
 
 
 
-        <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10">
+        <!-- <header class="sm:pt-3.5 sm:px-3.5 lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10">
             <nav id="navbar"
                 class="nav-class sm:border sm:rounded-full sm:px-6 sm:items-center sm:content-center lg:border lg:rounded-full lg:px-5 lg:items-center lg:content-center xl:px-10 [@media(min-width:2048px)]:w-[2000px] [@media(min-width:2048px)]:h-28  ">
                 <div
@@ -87,10 +64,10 @@
                         </ul>
                     </div>
 
-                    <div class="lg:pr-16 xl:pr-[75px] ">
+                    <div class="lg:pr-36 xl:pr-[155px] [@media(min-width:2048px)]:pr-[180px]">
                         <img src="Assets/img/logo (2).png" alt=""
-                            class="w-40 h-auto md:w-56 md:h-auto lg:w-52 lg:h-auto xl:w-56 [@media(min-width:2048px)]:w-[360px]" />
-                    </div>
+                          class="w-40 h-auto md:w-56 md:h-auto lg:w-52 lg:h-auto xl:w-56 [@media(min-width:2048px)]:w-[360px]" />
+                      </div>
                     <div id="nav-menu"
                         class="absolute top-0 left-[-100%] min-h-[100vh] w-full flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:w-auto ">
                         <ul class="flex flex-col items-center gap-5 lg:flex-row xl:gap-6">
@@ -115,11 +92,128 @@
                     </div>
                 </div>
             </nav>
+        </header> -->
+
+
+
+        <header>
+            <!-- mobile view -->
+            <div class="lg:hidden xl:hidden [@media(min-width:2048px)]:hidden   justify-center ">
+                <nav id="navbar"
+                    class=" nav-class bg-black  p-5 items-center flex w-full h-auto content-center fixed z-50">
+                    <div class="container  gap-0 flex items-center justify-between  bg-transparent ">
+                        <div id="nav-menu"
+                            class="bg-black absolute top-0 left-[-100%] min-h-[100vh] w-full  flex items-center justify-center duration-300 overflow-hidden">
+                            <ul class="flex flex-col items-center gap-6  bg-transparent ">
+                                <li>
+                                    <a href="index.html" class="nav-link  ">Home</a>
+                                </li>
+                                <li>
+                                    <a href="ourstory.html" class="nav-link ">OurStory</a>
+                                </li>
+                                <li>
+                                    <a href="service.html" class="nav-link ">Service</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="nav-link ">Contact
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <button>
+                                        <a href="signup.html" class="nav-link">Sign up</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <a href="login.html" class="nav-link">Login</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lg:pr-36 ">
+                            <img src="Assets/img/logo (2).png" alt="" class="w-40 h-auto" />
+                        </div>
+
+                        <div class="text-xl cursor-pointer z-50  ">
+                            <i class="ri-menu-line" id="hamburger"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+
+
+            <!-- tablet size after screen size -->
+            <div class="hidden lg:static lg:flex lg:justify-center lg:pt-5 xl:px-0 [@media(min-width:2048px)]:pt-10 ">
+                <nav id="navbar"
+                    class=" nav-class  lg:border lg:rounded-full lg:px-5 lg:items-center lg:content-center xl:px-10 [@media(min-width:2048px)]:w-[2000px] [@media(min-width:2048px)]:h-28 fixed z-50">
+                    <div
+                        class="container  lg:flex lg:items-center lg:justify-between lg:p-0 lg:bg-transparent lg:gap-5 xl:gap-40 [@media(min-width:2048px)]:gap-14 [@media(min-width:2048px)]:p-0">
+                        <ul class="lg:flex lg:items-center lg:gap-4 lg:flex-row lg:bg-transparent xl:gap-6 ">
+                            <li>
+                                <a href="index.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold ">Home</a>
+                            </li>
+                            <li>
+                                <a href="ourstory.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">OurStory</a>
+                            </li>
+                            <li>
+                                <a href="service.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Service</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="nav-link [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Contact
+                                    Us</a>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="signup.html" class="nav-link lg:hidden">Sign up</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="login.html" class="nav-link lg:hidden">Login</a>
+                                </button>
+                            </li>
+                        </ul>
+
+
+                        <div class="lg:pr-36 xl:pr-[155px] [@media(min-width:2048px)]:pr-[180px]">
+                            <img src="Assets/img/logo (2).png" alt=""
+                                class="lg:w-52 lg:h-auto xl:w-56 [@media(min-width:2048px)]:w-[360px]" />
+                        </div>
+
+                        <ul class="lg:flex  lg:items-center lg:gap-5 lg:flex-row xl:gap-6">
+
+                            <li class="lg:flex lg:justify-center lg:items-center">
+                                <button
+                                    class="nav-link lg:w-28 xl:w-32 lg:h-6 lg:rounded-full lg:border lg:bg-transparent [@media(min-width:2048px)]:w-52 [@media(min-width:2048px)]:h-12">
+                                    <a href="login.html"
+                                        class="[@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:font-semibold">Login</a>
+                                </button>
+                            </li>
+                            <li class="lg:flex lg:justify-center lg:items-center">
+                                <button class="nav-link">
+                                    <a href="#profile" class=""><img src="Assets/img/icons8-male-user-48.png" alt=""
+                                            class="lg:w-10 lg:h-auto xl:w-12 [@media(min-width:2048px)]:w-20"> </a>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
         </header>
+
+
     </section>
 
     <section>
-        <div class="pt-8 flex flex-col md:pt-20 lg:pt-24 xl:pt-16 [@media(min-width:2048px)]:pt-64">
+        <div class="pt-[72px] flex flex-col md:pt-20 lg:pt-32 xl:pt-32 [@media(min-width:2048px)]:pt-80">
             <div class="relative flex justify-center z-[-1]">
                 <img src="Assets/img/logo (6).png" alt=""
                     class="absolute w-60 h-auto md:mt-10 md:w-[500px] lg:w-[650px] xl:w-[1000px] [@media(min-width:2048px)]:w-[1500px] [@media(min-width:2048px)]:mt-24">
@@ -128,7 +222,7 @@
 
 
                 <div
-                    class="box hidden md:block  w-[80%] [@media(min-width:2048px)]:w-3/4 h-auto md:px-6 md:pt-16 md:pb-6 rounded-3xl xl:px-10 xl:pt-24 xl:pb-8 [@media(min-width:2048px)]:px-14 [@media(min-width:2048px)]:pt-36 [@media(min-width:2048px)]:pb-11">
+                    class=" box hidden md:block  w-[80%] [@media(min-width:2048px)]:w-3/4 h-auto md:px-6 md:pt-16 md:pb-6 rounded-3xl xl:px-10 xl:pt-24 xl:pb-8 [@media(min-width:2048px)]:px-14 [@media(min-width:2048px)]:pt-36 [@media(min-width:2048px)]:pb-11">
                     <ul class="flex flex-row w-full md:gap-6 xl:gap-8 [@media(min-width:2048px)]:gap-20">
                         <li class="w-2/5">
                             <h1
