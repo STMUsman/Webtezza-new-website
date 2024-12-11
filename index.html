@@ -33,7 +33,31 @@
       plugins: [],
     };
   </script>
+  <style>
+    .dropdown .form .button img {
+      transition: transform 0.6s ease;
+    }
 
+    .dropdown .form .button img.active {
+      transform: rotate(180deg);
+    }
+
+    .dropdown .form input:focus,
+    .dropdown .form button:focus {
+      outline: none;
+    }
+
+    .dropdown .dropdownList {
+      display: none;
+    }
+
+
+
+    .dropdown .dropdownList li:hover {
+      background-color: #333;
+      transition: background-color 0.3s ease;
+    }
+  </style>
   <style>
     .faq-input {
       border-radius: 10px 0px 0px 10px;
@@ -42,6 +66,16 @@
     .faq-button {
       border-radius: 0px 10px 10px 0px;
     }
+
+    .dropdown .form .button .fa-chevron-down {
+      transform: rotate(0deg);
+      transition: all 0.6s;
+    }
+
+    .dropdown .form .button .fa-chevron-down.active {
+      transform: rotate(180deg);
+    }
+
 
     .dropdown .form .button img {
       transition: transform 0.6s ease;
@@ -693,171 +727,154 @@
             class="absolute w-full mt-3 xl:ml-80 md:mt-10 h-full md:w-[85%] md:h-auto bg-cover lg:w-[80%] lg:h-auto lg:mt-14 xl:w-[60%] xl:h-auto xl:mt-40 [@media(min-width:2048px)]:w-[70%] [@media(min-width:2048px)]:mt-[500px] [@media(min-width:2048px)]:ml-96">
 
 
-
-          <div class=" flex justify-center w-full flex-col  z-10">
-
-            <div class="dropdown flex flex-col w-full justify-center">
-              <div class="form flex justify-center">
-                <input type="text" id="select" value="Q1. Why i Choose" readonly
-                  class="faq-input border-none py-2 px-3.5  md:p-3.5 lg:5 xl:p-5 z-50 text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-7 [@media(min-width:2048px)]:text-2xl cursor-pointer  text-white bg-[#ffffff] bg-opacity-10 w-2/3">
-                <button
-                  class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
-                    src="Assets/img/Vector (12).png" alt="Dropdown Icon"
-                    class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
-              </div>
-              <ul class="dropdownList bg-[#ffffff] bg-opacity-10 w-2/3 flex justify-center flex-col m-0 p-0 ">
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class=" flex justify-center w-full flex-col   z-10">
-
-            <div class="dropdown flex flex-col w-full justify-center">
-              <div class="form flex justify-center">
-                <input type="text" id="select" value="Q1. Why i Choose" readonly
-                  class="faq-input border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-7 [@media(min-width:2048px)]:text-2xl  cursor-pointer text-white bg-[#ffffff] bg-opacity-10  w-2/3">
-                <button
-                  class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
-                    src="Assets/img/Vector (12).png" alt="Dropdown Icon"
-                    class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
-              </div>
-              <ul class="dropdownList bg-[#ffffff] bg-opacity-10 w-2/3 flex justify-center flex-col m-0 p-0 ">
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-
-          <div class=" flex justify-center w-full flex-col  z-10">
-
-            <div class="dropdown flex flex-col w-full justify-center">
-              <div class="form flex justify-center">
-                <input type="text" id="select" value="Q1. Why i Choose" readonly
-                  class="faq-input border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-7 [@media(min-width:2048px)]:text-2xl cursor-pointer text-white bg-[#ffffff] bg-opacity-10  w-2/3">
-                <button
-                  class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
-                    src="Assets/img/Vector (12).png" alt="Dropdown Icon"
-                    class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
-              </div>
-              <ul class="dropdownList bg-[#ffffff] bg-opacity-10 w-2/3 flex justify-center flex-col m-0 p-0 ">
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-
-          <div class=" flex justify-center w-full flex-col  z-10">
-
-            <div class="dropdown flex flex-col w-full justify-center">
-              <div class="form flex justify-center">
-                <input type="text" id="select" value="Q1. Why i Choose" readonly
-                  class="faq-input border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-7 [@media(min-width:2048px)]:text-2xl  cursor-pointer text-white bg-[#ffffff] bg-opacity-10  w-2/3">
-                <button
-                  class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
-                    src="Assets/img/Vector (12).png" alt="Dropdown Icon"
-                    class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
-              </div>
-              <ul class="dropdownList bg-[#ffffff] bg-opacity-10 w-2/3 flex justify-center flex-col m-0 p-0 ">
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-
-          <div class=" flex justify-center w-full flex-col  z-10">
-
-            <div class="dropdown flex flex-col w-full justify-center">
-              <div class="form flex justify-center">
-                <input type="text" id="select" value="Q1. Why i Choose" readonly
-                  class="faq-input border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-7 [@media(min-width:2048px)]:text-2xl  cursor-pointer text-white bg-[#ffffff] bg-opacity-10  w-2/3">
-                <button
-                  class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
-                    src="Assets/img/Vector (12).png" alt="Dropdown Icon"
-                    class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
-              </div>
-              <ul class="dropdownList bg-[#ffffff] bg-opacity-10 w-2/3 flex justify-center flex-col m-0 p-0 ">
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-                <li class="p-3 "><a href="#"
-                    class="text-white font-medium text-[10px] md:text-sm lg:text-base xl:text-lg  [@media(min-width:2048px)]:text-2xl">Option
-                    One</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-        <div class="flex justify-center mt-4 md:mt-9 lg:mt-11 xl:mt-16 [@media(min-width:2048px)]:mt-32">
           <div
-            class="w-[90%] md:w-4/5 lg:w-4/5 xl:w-[75%] h-auto rounded-2xl md:rounded-3xl lg:rounded-3xl xl:rounded-3xl [@media(min-width:2048px)]:rounded-[40px] relative overflow-hidden">
-            <div
-              class="absolute flex justify-end ml-44 md:ml-80 lg:ml-[420px]  xl:ml-[550px] [@media(min-width:2048px)]:ml-[1000px]">
-              <img src="Assets/img/Glass effect 1.png" alt=""
-                class="w-40 h-16 md:w-80 md:h-24 lg:w-[500px] lg:h-36 xl:w-[1000px] xl:h-[300px] [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:h-[400px]  object-cover">
+            class=" flex justify-center w-full flex-col gap-1.5 md:gap-2 lg:gap-2.5 xl:gap-3.5 [@media(min-width:2048px)]:gap-10 z-10">
+
+            <div class="flex justify-center">
+              <div class="dropdown flex flex-col w-2/3">
+                <div class="form flex">
+                  <input type="text" id="select" value="Q1. Why i Choose" readonly
+                    class="faq-input w-full border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 bg-[#ffffff] bg-opacity-10 text-white text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-12 [@media(min-width:2048px)]:text-2xl cursor-pointer ">
+                  <button
+                    class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
+                      src="Assets/img/Vector (12).png" alt="Dropdown Icon"
+                      class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
+                </div>
+                <ul class="dropdownList rounded-lg bg-[#ffffff] bg-opacity-10 m-0 p-0 ">
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5 [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5  [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                </ul>
+              </div>
             </div>
-            <img src="Assets/img/abstract-light-painting-dark 1.png" alt="" class="w-full h-auto  ">
+
+            <div class="flex justify-center">
+              <div class="dropdown flex flex-col w-2/3">
+                <div class="form flex">
+                  <input type="text" id="select" value="Q1. Why i Choose" readonly
+                    class="faq-input w-full border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 bg-[#ffffff] bg-opacity-10 text-white text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-12 [@media(min-width:2048px)]:text-2xl cursor-pointer ">
+                  <button
+                    class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
+                      src="Assets/img/Vector (12).png" alt="Dropdown Icon"
+                      class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
+                </div>
+                <ul class="dropdownList rounded-lg bg-[#ffffff] bg-opacity-10 m-0 p-0 ">
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5 [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5  [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <div class="dropdown flex flex-col w-2/3">
+                <div class="form flex">
+                  <input type="text" id="select" value="Q1. Why i Choose" readonly
+                    class="faq-input w-full border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 bg-[#ffffff] bg-opacity-10 text-white text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-12 [@media(min-width:2048px)]:text-2xl cursor-pointer ">
+                  <button
+                    class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
+                      src="Assets/img/Vector (12).png" alt="Dropdown Icon"
+                      class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
+                </div>
+                <ul class="dropdownList rounded-lg bg-[#ffffff] bg-opacity-10 m-0 p-0 ">
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5 [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5  [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <div class="dropdown flex flex-col w-2/3">
+                <div class="form flex">
+                  <input type="text" id="select" value="Q1. Why i Choose" readonly
+                    class="faq-input w-full border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 bg-[#ffffff] bg-opacity-10 text-white text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-12 [@media(min-width:2048px)]:text-2xl cursor-pointer ">
+                  <button
+                    class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
+                      src="Assets/img/Vector (12).png" alt="Dropdown Icon"
+                      class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
+                </div>
+                <ul class="dropdownList rounded-lg bg-[#ffffff] bg-opacity-10 m-0 p-0 ">
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5 [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5  [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <div class="dropdown flex flex-col w-2/3">
+                <div class="form flex">
+                  <input type="text" id="select" value="Q1. Why i Choose" readonly
+                    class="faq-input w-full border-none py-2 px-3.5 md:p-3.5 lg:5 xl:p-5 z-50 bg-[#ffffff] bg-opacity-10 text-white text-[10px] md:text-sm lg:text-base xl:text-lg [@media(min-width:2048px)]:p-12 [@media(min-width:2048px)]:text-2xl cursor-pointer ">
+                  <button
+                    class="faq-button button w-12  bg-[#ffffff] bg-opacity-10 border-none flex justify-center items-center cursor-pointer"><img
+                      src="Assets/img/Vector (12).png" alt="Dropdown Icon"
+                      class="icon w-2.5 md:w-3 lg:w-3.5 xl:w-4 [@media(min-width:2048px)]:w-7"></button>
+                </div>
+                <ul class="dropdownList rounded-lg bg-[#ffffff] bg-opacity-10 m-0 p-0 ">
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5 [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                  <li class="px-3.5 py-1 xl:p-6 md:py-2.5 lg:py-3.5 xl:py-5  [@media(min-width:2048px)]:py-12 [@media(min-width:2048px)]:px-12"><a href="#"
+                      class="text-white font-medium  text-[10px] md:text-xs lg:text-sm xl:text-base  [@media(min-width:2048px)]:text-2xl">Option
+                      One</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex justify-center mt-4 md:mt-9 lg:mt-11 xl:mt-16 [@media(min-width:2048px)]:mt-32">
+              <div
+                class="w-[80%] md:w-4/5 lg:w-4/5 xl:w-[75%] h-auto rounded-2xl md:rounded-3xl lg:rounded-3xl xl:rounded-3xl [@media(min-width:2048px)]:rounded-[40px] relative overflow-hidden">
+                <div
+                  class="absolute flex justify-end ml-40 md:ml-80 lg:ml-[420px]  xl:ml-[550px] [@media(min-width:2048px)]:ml-[1000px]">
+                  <img src="Assets/img/Glass effect 1.png" alt=""
+                    class="w-40 h-16 md:w-80 md:h-24 lg:w-[500px] lg:h-36 xl:w-[1000px] xl:h-[300px] [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:h-[400px]  object-cover">
+                </div>
+                <img src="Assets/img/abstract-light-painting-dark 1.png" alt="" class="w-full h-auto  ">
 
 
-            <div
-              class="absolute inset-0 flex flex-col justify-center px-2 md:px-4 lg:px-7 xl:px-10 [@media(min-width:2048px)]:px-20">
-              <ul class="flex flex-row justify-between items-center">
-                <li>
-                  <h1
-                    class="font-medium text-white text-[8px] md:text-sm font-Poppins lg:text-base xl:text-lg [@media(min-width:2048px)]:text-4xl">
-                    Subscribe Newsletters</h1>
-                </li>
-                <li>
-                  <form action="" class="relative flex items-center">
-                    <input type="text" placeholder="Enter your email"
-                      class="text-[#000] w-44 md:w-80 text-[6px] lg:w-[450px] xl:w-[640px] lg:text-sm h-auto md:text-xs rounded-full p-1 px-2 md:p-2 lg:p-3 xl:p-5 [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:p-7" />
-                    <button type="submit"
-                      class="w-[60px] text-[5px] px-1 py-0.5 md:w-28 lg:w-32 xl:w-36 xl:p-2 lg:p-1.5 h-auto rounded-3xl md:text-[10px] md:p-1 bg-[#010031] text-white absolute top-1/2 right-0.5 md:right-1 lg:right-2 xl:right-4 transform -translate-y-1/2 [@media(min-width:2048px)]:w-80 [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:right-6">
-                      Subscribe Now
-                    </button>
-                  </form>
-                </li>
-              </ul>
+                <div
+                  class="absolute inset-0 flex flex-col justify-center px-2 md:px-4 lg:px-7 xl:px-10 [@media(min-width:2048px)]:px-20">
+                  <ul class="flex flex-row justify-between items-center">
+                    <li>
+                      <h1
+                        class="font-medium text-white text-[8px] md:text-sm font-Poppins lg:text-base xl:text-lg [@media(min-width:2048px)]:text-4xl">
+                        Subscribe Newsletters</h1>
+                    </li>
+                    <li>
+                      <form action="" class="relative flex items-center">
+                        <input type="text" placeholder="Enter your email"
+                          class="text-[#000] w-40 md:w-80 text-[6px] lg:w-[450px] xl:w-[640px] lg:text-sm h-auto md:text-xs rounded-full p-1 px-2 md:p-2 lg:p-3 xl:p-5 [@media(min-width:2048px)]:w-[1100px] [@media(min-width:2048px)]:text-3xl [@media(min-width:2048px)]:p-7" />
+                        <button type="submit"
+                          class="w-[60px] text-[5px] px-1 py-0.5 md:w-28 lg:w-32 xl:w-36 xl:p-2 lg:p-1.5 h-auto rounded-3xl md:text-[10px] md:p-1 bg-[#010031] text-white absolute top-1/2 right-0.5 md:right-1 lg:right-2 xl:right-4 transform -translate-y-1/2 [@media(min-width:2048px)]:w-80 [@media(min-width:2048px)]:text-2xl [@media(min-width:2048px)]:right-6">
+                          Subscribe Now
+                        </button>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
             </div>
 
           </div>
         </div>
-
-
       </div>
+
+
     </div>
   </section>
 
@@ -1016,6 +1033,29 @@
           $list.slideToggle(500);
           $icon.toggleClass("active");
         });
+      });
+    });
+  </script>
+
+  <script>
+    // Dropdown functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const dropdownButton = document.querySelector(".button");
+      const dropdownList = document.querySelector(".dropdownList");
+      const dropdownIcon = document.querySelector(".icon");
+
+      dropdownButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdownList.style.display = dropdownList.style.display === "block" ? "none" : "block";
+        dropdownIcon.classList.toggle("active");
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+          dropdownList.style.display = "none";
+          dropdownIcon.classList.remove("active");
+        }
       });
     });
   </script>
