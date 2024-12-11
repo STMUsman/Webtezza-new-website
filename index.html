@@ -33,31 +33,7 @@
       plugins: [],
     };
   </script>
-  <style>
-    .dropdown .form .button img {
-      transition: transform 0.6s ease;
-    }
 
-    .dropdown .form .button img.active {
-      transform: rotate(180deg);
-    }
-
-    .dropdown .form input:focus,
-    .dropdown .form button:focus {
-      outline: none;
-    }
-
-    .dropdown .dropdownList {
-      display: none;
-    }
-
-
-
-    .dropdown .dropdownList li:hover {
-      background-color: #333;
-      transition: background-color 0.3s ease;
-    }
-  </style>
   <style>
     .faq-input {
       border-radius: 10px 0px 0px 10px;
@@ -996,31 +972,8 @@
     </div>
   </section>
 
-  <!-- <script>
-    // Dropdown functionality
-    document.addEventListener("DOMContentLoaded", () => {
-      const dropdownButton = document.querySelector(".button");
-      const dropdownList = document.querySelector(".dropdownList");
-      const dropdownIcon = document.querySelector(".icon");
-
-      dropdownButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        dropdownList.style.display = dropdownList.style.display === "block" ? "none" : "block";
-        dropdownIcon.classList.toggle("active");
-      });
-
-      // Close dropdown when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!e.target.closest(".dropdown")) {
-          dropdownList.style.display = "none";
-          dropdownIcon.classList.remove("active");
-        }
-      });
-    });
-  </script> -->
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
+  <!-- <script>
     $(function () {
       $(".dropdown").each(function () {
         const $dropdown = $(this);
@@ -1035,7 +988,7 @@
         });
       });
     });
-  </script>
+  </script> -->
 
   <script>
     // Dropdown functionality
